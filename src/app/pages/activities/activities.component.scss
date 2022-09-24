@@ -1,0 +1,162 @@
+@import "src/styles";
+
+/*ACTIVITY BOXES*/
+.active {
+  border-color: $accent-color;
+}
+
+#activity-cards {
+  margin: 20px 10%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.evtbox {
+  /* event boxes */
+  width: 100%;
+  height: auto;
+  flex: 0 1 29%;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  text-align: center;
+  overflow: auto;
+  display: inline-block;
+
+  @media screen and (max-width: 1200px) {
+    flex: 0 1 45%;
+  }
+
+  @media screen and (max-width: 1000px) {
+    flex: 0 1 100%;
+  }
+}
+
+.eicon {
+  width: 100%;
+  height: auto;
+  margin: auto 0;
+  align-items: center;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 75px;
+  margin-bottom: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 25px;
+  border-radius: 3px;
+  width: 900px;
+  height: 650px;
+  max-width: 100%;
+  overflow-x: hidden;
+
+  @media screen and (max-width: 900px) {
+    height: 95%;
+    width: 90%;
+  }
+}
+
+.position-desc {
+  overflow: auto;
+}
+
+.imgbox {
+  overflow: auto;
+
+  @media screen and (max-width: 700px) {
+    display: block;
+  }
+}
+
+.imgleft {
+  /*modal images*/
+  float: left;
+  height: auto;
+  width: 49%;
+  margin-bottom: 10px;
+
+  @media screen and (max-width: 700px) {
+    float: none;
+    width: 100%;
+  }
+}
+
+.imgright {
+  float: right;
+  height: auto;
+  width: 49%;
+  margin-bottom: 10px;
+
+  @media screen and (max-width: 700px) {
+    float: none;
+    width: 100%;
+  }
+}
+
+/*close*/
+.close-container {
+  position: absolute;
+  top: 20px;
+  right: -15px;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.leftright {
+  height: 2px;
+  width: 25px;
+  position: absolute;
+  background-color: #f4a259;
+  border-radius: 2px;
+  transform: rotate(45deg);
+  transition: all 0.3s ease-in;
+}
+
+.rightleft {
+  height: 2px;
+  width: 25px;
+  position: absolute;
+  background-color: #f4a259;
+  border-radius: 2px;
+  transform: rotate(-45deg);
+  transition: all 0.3s ease-in;
+}
+
+.close-container:hover .leftright {
+  transform: rotate(-45deg);
+  background-color: #f25c66;
+}
+
+.close-container:hover .rightleft {
+  transform: rotate(45deg);
+  background-color: #f25c66;
+}
+
+.close-container:hover label {
+  opacity: 1;
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    -webkit-text-size-adjust: none;
+  }
+}

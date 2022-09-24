@@ -1,0 +1,50 @@
+[
+  {
+    "id": "finddining",
+    "title": "Find Dining",
+    "oneLiner": "Chosen by City of Toronto, a food order app that allows restaurant owners to share their stories.",
+    "link": [
+      {
+        "site": "Github",
+        "url": "https://github.com/winnllam/team_08-project"
+      }
+    ]
+  },
+  {
+    "id": "1secret",
+    "title": "1Secret",
+    "oneLiner": "Web app that lets you share temporary secret links for passwords and sensitive information.",
+    "link": [
+      {
+        "site": "Github",
+        "url": "https://github.com/winnllam/1Secret"
+      }
+    ]
+  },
+  {
+    "id": "socialmedia",
+    "title": "Social Media Image API",
+    "oneLiner": "Extract thumbnail URLs of shots made by a user on different media platforms.",
+    "link": [
+      {
+        "site": "API Link",
+        "url": "https://socialmedia-image-scapel.vercel.app/"
+      },
+      {
+        "site": "Github",
+        "url": "https://github.com/winnllam/socialmedia-image-scapel"
+      }
+    ]
+  },
+  {
+    "id": "chatbotbox",
+    "title": "Chat Bot Box",
+    "oneLiner": "A chat box UI for a Dialogflow agent.",
+    "link": [
+      {
+        "site": "Github",
+        "url": "https://github.com/winnllam/chatbotbox"
+      }
+    ]
+  }
+]

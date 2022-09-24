@@ -1,0 +1,131 @@
+@import "src/styles";
+
+h2 {
+  text-align: center;
+  font-size: 45px;
+}
+
+@media screen and (max-width: 800px) {
+  h4 {
+    font-size: 100px;
+  }
+}
+
+p {
+  margin: 8px;
+}
+
+li {
+  font-size: 18px;
+}
+
+a {
+  color: rgb(50, 50, 50);
+}
+
+.white {
+  color: white;
+}
+
+/* TITLE */
+#title {
+  height: 100%;
+}
+
+#position {
+  font-family: Staatliches;
+  font-size: 30px;
+  text-align: center;
+  color: #fff0a8;
+
+  @media screen and (max-width: 800px) {
+    font-size: 20px;
+  }
+}
+
+#backdrop {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* SMALL BLURB */
+.content {
+  padding: 50px;
+  margin: 0 auto -50px;
+}
+
+/* HIGHLIGHTS */
+.container {
+  margin: 100px auto;
+}
+.card-header,
+.card-content {
+  padding: 0;
+  margin: 0;
+}
+
+.content {
+  margin: 0;
+  padding: 20px;
+}
+.carousel {
+  width: 800px;
+  margin: auto;
+
+  @media screen and (max-width: 925px) {
+    width: auto;
+  }
+}
+
+#about {
+  max-width: 980px;
+  margin: 50px auto;
+  overflow: auto;
+}
+
+#me {
+  width: 350px;
+  border-radius: 50%;
+  float: left;
+
+  @media screen and (max-width: 980px) {
+    width: 40%;
+
+    .widget {
+      padding: 8% 7%;
+      margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    width: 100%;
+    float: none;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+}
+
+#info {
+  width: 600px;
+  float: right;
+  padding: 2%;
+  margin: 10px;
+
+  @media screen and (max-width: 980px) {
+    width: 50%;
+    padding: 3% 4%;
+  }
+
+  @media screen and (max-width: 800px) {
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    -webkit-text-size-adjust: none;
+  }
+}

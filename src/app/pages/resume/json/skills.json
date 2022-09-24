@@ -1,0 +1,33 @@
+[
+  {
+    "category": "Languages",
+    "sub": [
+      "Python",
+      "Java",
+      "HTML/CSS",
+      "TypeScript/JavaScript",
+      "C",
+      "Bash"
+    ]
+  },
+  {
+    "category": "Frameworks",
+    "sub": ["Node.js", "Angular", "React", "Express", "Flask", "Django"]
+  },
+  {
+    "category": "Database",
+    "sub": ["MongoDB"]
+  },
+  {
+    "category": "Software/Tools",
+    "sub": [
+      "Git",
+      "Figma",
+      "Jira",
+      "Docker",
+      "Photoshop",
+      "Android Studio",
+      "Microsoft Office"
+    ]
+  }
+]

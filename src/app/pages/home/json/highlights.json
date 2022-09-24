@@ -1,0 +1,23 @@
+[
+  {
+    "title": "deCODE - 1Password",
+    "content": "Chosen out of 1000+ participants to attend deCODE hackathon, partnered with 1Password mentors to create a web application that integrates their upcoming 1Password feature.",
+    "date": "March 2021",
+    "icon": "fa-trophy",
+    "url": "https://github.com/winnllam/1Secret"
+  },
+  {
+    "title": "Scarborough Dining 1st Place",
+    "content": "Winning team chosen by the City of Toronto and the BRIDGE UTSC, creating a food ordering app with a focus on Scarborough restaurant owners to connect and have an online presence.",
+    "date": "July - Aug 2020",
+    "icon": "fa-trophy",
+    "url": "https://github.com/winnllam/team_08-project"
+  },
+  {
+    "title": "RBC Innovation 3rd Place",
+    "content": "One of the best overall project for RBC's Innovation Challenge, creating an app to aid international students streamline their banking process in Canada.",
+    "date": "April 2020",
+    "icon": "fa-trophy",
+    "url": "/projects"
+  }
+]

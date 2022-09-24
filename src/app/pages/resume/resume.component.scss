@@ -1,0 +1,94 @@
+@import "src/styles";
+
+h2 {
+  color: $violet-color;
+  font-size: 50px;
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+h6 {
+  font-family: "Open Sans Condensed";
+  font-size: 20px;
+  text-align: center;
+}
+
+p {
+  margin: 0;
+}
+
+.timeline-box {
+  padding: 20px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+/* RESUME INFO */
+.resume {
+  margin: 20px;
+  margin-bottom: 40px;
+  padding-left: 20px;
+}
+
+.resume-headers {
+  display: inline;
+}
+
+#resume-format {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#resume-sections {
+  width: 65%;
+  margin: 70px;
+
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 700px) {
+    margin: 5%;
+  }
+}
+
+/* SKILLS */
+.card {
+  margin-top: 20px;
+  width: 200px;
+
+  @media screen and (max-width: 480px) {
+    width: auto;
+  }
+}
+
+.card-text {
+  font-size: 15px;
+}
+
+.skill-card {
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+#skills {
+  margin: auto;
+
+  @media screen and (max-width: 1200px) {
+    column-count: 3;
+  }
+
+  @media screen and (max-width: 700px) {
+    column-count: 2;
+  }
+
+  @media screen and (max-width: 550px) {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    -webkit-text-size-adjust: none;
+  }
+}
