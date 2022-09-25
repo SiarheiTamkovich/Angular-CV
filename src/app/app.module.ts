@@ -5,7 +5,6 @@ import { NgModule } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgxScrollLockModule } from 'ngx-scroll-lock';
 import { IvyCarouselModule } from 'angular-responsive-carousel';
-import { MzdTimelineModule } from 'ngx-mzd-timeline';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
