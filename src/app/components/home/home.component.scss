@@ -1,0 +1,53 @@
+.homepage {
+  background: url(../../../assets/img/bg.webp);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.homepage-content {
+  text-align: center;
+  margin-top: 14vh;
+  padding: 0 2vw;
+}
+
+.homepage-content .hello {
+  font-size: 1.5rem;
+}
+
+.homepage-content .name {
+  font-size: 3rem;
+  font-weight: bolder;
+  margin: 10px 0;
+}
+
+.homepage-content .profession {
+  font-size: 1.5rem;
+}
+
+.down-arrow {
+  display: inline-block;
+  font-size: 1.75rem;
+  margin-top: 2.5em;
+  transition: color .3s ease;
+  -webkit-animation: arrow_bounce 2s ease infinite;
+  animation: arrow_bounce 2s ease infinite;
+  cursor: pointer;
+}
+
+@keyframes arrow_bounce {
+  0%, 25%, 55%, 75%, 100% {
+    transform: translateY(0);
+  }
+  45% {
+    transform: translateY(-20px);
+  }
+  65% {
+    transform: translateY(-10px);
+  }
+  85% {
+    transform: translateY(-5px);
+  }
+}

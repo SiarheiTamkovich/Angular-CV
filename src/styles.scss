@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+@import './variables';
+@import './assets/font/font';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Montserrat Alternates-Light', sans-serif;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.container {
+  max-width: calc(100% - 40px);
+  margin: auto;
+}
