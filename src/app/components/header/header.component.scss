@@ -1,0 +1,26 @@
+.header-container {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1763a6;
+  padding: 0 10px;
+}
+
+.navbar-container {
+  min-width: 550px;
+  max-width: 1300px;
+}
+
+.navbar-menu {
+  display: flex;
+  justify-content: space-between;
+  transition: all .3s ease;
+}
+
+.navbar-menu__item {
+  transition: color .3s ease;
+}

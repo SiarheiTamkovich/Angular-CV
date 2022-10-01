@@ -1,5 +1,5 @@
 .homepage {
-  background: url(../../../assets/img/bg.webp);
+  background: url(../../../assets/img/home-bg.jpg);
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
@@ -9,7 +9,7 @@
 
 .homepage-content {
   text-align: center;
-  margin-top: 14vh;
+  margin-top: 20vh;
   padding: 0 2vw;
 }
 
@@ -30,7 +30,7 @@
 .down-arrow {
   display: inline-block;
   font-size: 1.75rem;
-  margin-top: 2.5em;
+  margin-top: 5em;
   transition: color .3s ease;
   -webkit-animation: arrow_bounce 2s ease infinite;
   animation: arrow_bounce 2s ease infinite;
