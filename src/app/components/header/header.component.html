@@ -1,21 +1,21 @@
-<header class="header-container">
-  <div class="light-toggle"></div>
+<header class="header-container" [ngClass]="{'sticky' : isSticky}">
+  <app-theme-toggle></app-theme-toggle>
   <nav class="navbar-container">
     <ul class="navbar-menu">
       <li class="navbar-menu__item">
-        <a>Home</a>
+        <a class="navbar-menu__link">Home</a>
       </li>
       <li class="navbar-menu__item">
-        <a>Portfolio</a>
+        <a class="navbar-menu__link">Portfolio</a>
       </li>
       <li class="navbar-menu__item">
-        <a>Experience</a>
+        <a class="navbar-menu__link">Experience</a>
       </li>
       <li class="navbar-menu__item">
-        <a>About</a>
+        <a class="navbar-menu__link">About</a>
       </li>
       <li class="navbar-menu__item">
-        <a>Contact</a>
+        <a class="navbar-menu__link">Contact</a>
       </li>
     </ul>
   </nav>

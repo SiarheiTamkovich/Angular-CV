@@ -1,10 +1,13 @@
 :root {
-  --bg: #000000ab;
-  --text: #fff;
-  --text-second: #01fce7;
+  --bg:             #000000ab;
+  --bg-blend-mode:  #555555;
+  --text:           #fff;
+  --text-second:    #01fce7;
+  --text-hover:     #f0d292;
 }
 
 .light {
-  --bg: #fff;
-  --text: #000;
+  --bg:             #fff;
+  --bg-blend-mode:  #55555500;
+  --text:           #000;
 }

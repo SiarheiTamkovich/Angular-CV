@@ -1,9 +1,9 @@
+@import '../../../variables';
+
 .homepage {
-  background: url(../../../assets/img/home-bg.jpg);
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-size: cover;
+  background: url(../../../assets/img/home-bg.jpg) no-repeat center /cover var(--bg-blend-mode);
   background-attachment: fixed;
+  background-blend-mode: color-burn; //multiply
   height: 100vh;
 }
 

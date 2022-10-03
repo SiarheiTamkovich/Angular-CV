@@ -12,6 +12,7 @@ import { HomeComponent } from './components/home/home.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { AboutComponent } from './components/about/about.component';
 import { HeaderComponent } from './components/header/header.component';
+import { ThemeToggleComponent } from './components/header/theme-toggle/theme-toggle.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HeaderComponent } from './components/header/header.component';
     HomeComponent,
     PortfolioComponent,
     AboutComponent,
-    HeaderComponent
+    HeaderComponent,
+    ThemeToggleComponent
   ],
   imports: [
     BrowserModule,
