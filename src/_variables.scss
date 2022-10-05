@@ -1,13 +1,18 @@
 :root {
   --bg:             #000000ab;
   --bg-blend-mode:  #555555;
+  --bg-sticky:      #000000ab;
   --text:           #fff;
   --text-second:    #01fce7;
   --text-hover:     #f0d292;
+  --text-shadow:    #0000ff;
 }
 
 .light {
   --bg:             #fff;
   --bg-blend-mode:  #55555500;
+  --bg-sticky:       #d7f0e9;
   --text:           #000;
+  --text-hover:     #fbff00;
+  --text-shadow:    #f8a100;
 }

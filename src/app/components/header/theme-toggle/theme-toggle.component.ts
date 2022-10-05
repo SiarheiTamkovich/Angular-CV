@@ -12,7 +12,7 @@ export class ThemeToggleComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    const body = document.getElementById('body');
+    const body = document.getElementsByTagName('body');
     const toggle = document.getElementById('toggle');
     const moon = document.getElementById('moon');
     const sunBody = document.getElementById('sun');
@@ -46,7 +46,7 @@ export class ThemeToggleComponent implements OnInit {
         if (beam6 != null) beam6.style.animation = 'revealSun 0.6s linear 0.9s';
         isMoon = false;
         if (toggle != null) toggle.addEventListener('animationend', revealSun);
-        if (body != null) body.classList.add('light');
+        if (body != null) body[0].classList.add('light');
       }
       return;
     }
@@ -81,7 +81,7 @@ export class ThemeToggleComponent implements OnInit {
         if (moon != null) moon.style.animation = 'revealMoon 1.5s linear';
         isMoon = true;
         if (toggle != null) toggle.addEventListener('animationend', revealMoon);
-        if (body != null)body.classList.remove('light');
+        if (body != null) body[0].classList.remove('light');
       }
       return;
     }

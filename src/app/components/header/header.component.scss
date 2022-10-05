@@ -9,10 +9,11 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 10px;
+  backdrop-filter: blur(6px);
 }
 
 .sticky {
-  background-color: var(--bg);
+  background-color: var(--bg-sticky);
 }
 
 .navbar-container {
@@ -38,10 +39,11 @@
   position: relative;
   cursor: pointer;
   transition: 0.8s;
+  text-shadow: 1px 1px 2px black, 0 0 1em var(--text-shadow), 0 0 0.2em var(--text-shadow);
 }
 
 .navbar-menu__link:hover {
-  color: #f0d292;
+  color: var(--text-hover);
 }
 
 .navbar-menu__link::before {
@@ -52,13 +54,13 @@
   right: 0;
   height: 2px;
   bottom: 4px;
-  background-color: #f0d292;
+  background-color: var(--text-hover);
   transition: width ease-in-out 0.5s;
 }
 
 .navbar-menu__link:hover::before {
   width: 100%;
   left: 0;
-  background-color: #f0d292;
+  background-color: var(--text-hover);
   transition: width ease-in-out 0.5s;
 }

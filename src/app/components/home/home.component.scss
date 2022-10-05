@@ -11,20 +11,26 @@
   text-align: center;
   margin-top: 20vh;
   padding: 0 2vw;
+  backdrop-filter: blur(6px);
+  width: 70%;
+  border-radius: 25px;
 }
 
 .homepage-content .hello {
   font-size: 1.5rem;
+  text-shadow: 1px 1px 2px black, 0 0 1em var(--text-shadow), 0 0 0.2em var(--text-shadow);
 }
 
 .homepage-content .name {
   font-size: 3rem;
   font-weight: bolder;
   margin: 10px 0;
+  text-shadow: 1px 1px 2px black, 0 0 1em var(--text-shadow), 0 0 0.2em var(--text-shadow);
 }
 
 .homepage-content .profession {
   font-size: 1.5rem;
+  text-shadow: 1px 1px 2px black, 0 0 1em var(--text-shadow), 0 0 0.2em var(--text-shadow);
 }
 
 .down-arrow {
@@ -35,6 +41,7 @@
   -webkit-animation: arrow_bounce 2s ease infinite;
   animation: arrow_bounce 2s ease infinite;
   cursor: pointer;
+  fill: yellow;
 }
 
 @keyframes arrow_bounce {
