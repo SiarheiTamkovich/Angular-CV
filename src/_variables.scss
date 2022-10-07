@@ -2,20 +2,26 @@
   --bg:             #000000de;
   --bg-blend-mode:  #313131;
   --bg-sticky:      #000000ab;
+  --bg-btn:         #00000031;
   --text:           #fff;
   --text-second:    #01fce7;
   --text-hover:     #f0d292;
   --text-shadow:    #0000ff;
   --text-subtitle:  #4ea4d9;
+  --btn-border:     #4ea4d9;
+  --btn-hover:      #000000de;
 }
 
 .light {
   --bg:             #fff;
   --bg-blend-mode:  #55555500;
-  --bg-sticky:       #d7f0e9;
+  --bg-sticky:      #d7f0e9;
+  --bg-btn:         #fff;
   --text:           #000;
   --text-second:    #01fce7;
   --text-hover:     #fbff00;
   --text-shadow:    #f8a100;
   --text-subtitle:  #d96e4e;
+  --btn-border:     #d96e4e;
+  --btn-hover:      #c05231;
 }
