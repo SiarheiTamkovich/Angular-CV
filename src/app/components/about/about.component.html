@@ -2,12 +2,12 @@
   <h2 class="title">About Me</h2>
   <h3 class="subtitle">Objective</h3>
   <div class="container about-page-content">
-    <div class="about__photo">
+    <div class="about__photo" [@transitAnimationLeft]="state">
       <div class="about__photo-wrapper">
           <img src="../../../assets/img/photo1.png" alt="Siarhei Tamkovich photo" width="260px" height="260px">
       </div>
     </div>
-    <div class="about__content">
+    <div class="about__content" [@transitAnimationRight]="state">
       <p class="about__text">An energetic and imaginative web developer who is able to work alongside
         other talented IT professionals in creating websites to the very highest standards.
         I has a high awareness of industry issues and trends, particularly in regard to accessibility,
