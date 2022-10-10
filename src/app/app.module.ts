@@ -13,6 +13,8 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { AboutComponent } from './components/about/about.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ThemeToggleComponent } from './components/header/theme-toggle/theme-toggle.component';
+import { CertificatesComponent } from './components/certificates/certificates.component';
+import { CertificatesCardComponent } from './components/certificates/certificates-card/certificates-card.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { ThemeToggleComponent } from './components/header/theme-toggle/theme-tog
     PortfolioComponent,
     AboutComponent,
     HeaderComponent,
-    ThemeToggleComponent
+    ThemeToggleComponent,
+    CertificatesComponent,
+    CertificatesCardComponent
   ],
   imports: [
     BrowserModule,
