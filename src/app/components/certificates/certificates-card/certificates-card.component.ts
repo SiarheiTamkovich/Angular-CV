@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, Input, ViewChild } from '@angular/core';
 
 import 'vanilla-tilt';
+import { CertificateModel } from '../certificate.model';
 declare const VanillaTilt: { init: (arg0: NodeListOf<Element>, arg1: { max: number; speed: number; }) => void; };
 
 @Component({
@@ -8,17 +9,22 @@ declare const VanillaTilt: { init: (arg0: NodeListOf<Element>, arg1: { max: numb
   templateUrl: './certificates-card.component.html',
   styleUrls: ['./certificates-card.component.scss']
 })
-export class CertificatesCardComponent implements OnInit {
+export class CertificatesCardComponent implements AfterViewInit {
+
+  @Input()
+  public certificates!: CertificateModel[];
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngAfterViewInit(): void {
+
     const cards = document.querySelectorAll(".certificates__card");
+
     VanillaTilt.init(cards, {
       max: 20,
       speed: 600,
-      // reverse: true,
     });
+    //console.log(this.certificates)
   }
 
 }

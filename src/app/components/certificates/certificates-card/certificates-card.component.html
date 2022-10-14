@@ -1,24 +1,13 @@
 <div class="certificates-cards-container">
-  <div class="certificates__card"  data-tilt data-tilt-scale="1.08">
+  <div class="certificates__card" data-tilt data-tilt-scale="1.08" *ngFor="let certificate of certificates">
     <div class="certificates__card-img">
-      <img src="../../../../assets/img/rs-js.jpg" alt="certificate Javascript">
+      <img src={{certificate.img}} alt="certificate">
     </div>
     <div class="certificates__card-about">
-      <h3 class="certificates__card-title">Javascript/Frontend</h3>
-      <p class="certificates__card-description">responsive, accessible, flex, slick, svg</p>
+      <h3 class="certificates__card-title">{{certificate.title}}</h3>
+      <p class="certificates__card-description">{{certificate.description}}</p>
       <a class="certificates__card-link btn" target="_blank"
-        href="https://app.rs.school/certificate/ilt97huj">View</a>
-    </div>
-  </div>
-  <div class="certificates__card"  data-tilt data-tilt-scale="1.08">
-    <div class="certificates__card-img">
-      <img src="../../../../assets/img/rs-js.jpg" alt="certificate Javascript">
-    </div>
-    <div class="certificates__card-about">
-      <h3 class="certificates__card-title">Javascript/Frontend</h3>
-      <p class="certificates__card-description">responsive, accessible, flex, slick, svg</p>
-      <a class="certificates__card-link btn" target="_blank"
-        href="https://app.rs.school/certificate/ilt97huj">View</a>
+        href={{certificate.href}}>View</a>
     </div>
   </div>
 </div>
