@@ -1,7 +1,6 @@
 import { Component, ElementRef, HostListener } from '@angular/core';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 
-
 const styleOn = style({
   opacity: 1,
   transform: "translateX(0)"
