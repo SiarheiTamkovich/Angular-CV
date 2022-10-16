@@ -1,0 +1,106 @@
+.project-card-container {
+  width: 900px;
+  margin: 60px auto;
+
+  @media screen and (max-width: 980px) {
+    width: 675px;
+  }
+
+  @media screen and (max-width: 700px) {
+    width: 90%;
+  }
+}
+
+.card {
+  display: block;
+}
+
+.card-img-top {
+  height: 50%;
+  width: 100%;
+  object-fit: cover;
+  padding: 5px;
+}
+
+.card-title {
+  font-family: Staatliches;
+  font-size: 30px;
+  margin: 0;
+}
+
+.filter {
+  text-align: center;
+}
+
+.filter-btn {
+  margin: 2px;
+}
+
+/* PROJECT BOXES */
+.projbox {
+  width: 900px;
+  margin: 60px auto;
+
+  @media screen and (max-width: 980px) {
+    width: 675px;
+  }
+
+  @media screen and (max-width: 700px) {
+    width: 90%;
+  }
+}
+
+.project-card {
+  margin: 20px;
+  padding: 10px;
+}
+
+.duration {
+  color: black;
+  font-size: 18px;
+  text-align: left;
+  margin: 0 10px;
+}
+
+.tag {
+  margin: 5px;
+}
+
+.btn {
+  color: grey;
+}
+
+.btn:hover {
+  color: black;
+}
+
+.btn-light {
+  margin-right: 5px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-desc {
+  width: 57%;
+  height: auto;
+  float: right;
+  clear: right;
+
+  @media screen and (max-width: 980px) {
+    width: 100%;
+    float: none;
+  }
+}
+
+.linkproj {
+  float: right;
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    -webkit-text-size-adjust: none;
+  }
+}
+

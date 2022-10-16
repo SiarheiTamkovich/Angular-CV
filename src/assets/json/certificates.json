@@ -1,24 +1,24 @@
 [
   {
-    "img": "assets/img/step-frontend-min.jpg",
+    "img": "step-frontend-min.jpg",
     "title": "Frontend Development",
     "description": "HTML5, CSS3, Git, JavaScript, React",
-    "href": "assets/img/step-frontend.jpg"
+    "href": "assets/img/certificates/step-frontend.jpg"
   },
   {
-    "img": "assets/img/rs-js.jpg",
+    "img": "rs-js.jpg",
     "title": "Javascript/Frontend",
     "description": "DOM, BEM, ES6 JavaScript, Rest API, Git, NPM, Webpack",
     "href": "https://app.rs.school/certificate/ilt97huj"
   },
   {
-    "img": "assets/img/rs-angular.jpg",
+    "img": "rs-angular.jpg",
     "title": "Angular",
     "description": "TypeScript, HttpClient, Router, RxJs, NgRx",
     "href": "https://app.rs.school/certificate/1815wmif"
   },
   {
-    "img": "assets/img/rs-nodejs.jpg",
+    "img": "rs-nodejs.jpg",
     "title": "Node.js",
     "description": "TypeScript, GRUD API, WebSocket, GraphQL, TypeORM, PostgreSQL, Docker, Express.js, Nest.js",
     "href": "https://app.rs.school/certificate/h1lpr9am"

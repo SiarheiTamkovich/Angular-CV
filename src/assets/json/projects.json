@@ -1,0 +1,20 @@
+[
+  {
+    "tags": ["HTML", "Landing page"],
+    "image": "step-stimulas.jpg",
+    "name": "Stimulas",
+    "duration": "August 2021",
+    "description": "Portfolio website project",
+    "url": "https://siarheitamkovich.github.io/Siarhei_Tamkovich_Step_21/Projects/Stimulas/",
+    "source": "https://github.com/SiarheiTamkovich/Siarhei_Tamkovich_Step_21/tree/master/Projects/Stimulas"
+  },
+  {
+    "tags": ["HTML", "Landing page"],
+    "image": "step-hightech.jpg",
+    "name": "Hightech",
+    "duration": "September 2021",
+    "description": "Website project for business",
+    "url": "https://siarheitamkovich.github.io/Siarhei_Tamkovich_Step_21/Projects/Hightech/",
+    "source": "https://github.com/SiarheiTamkovich/Siarhei_Tamkovich_Step_21/tree/master/Projects/Hightech"
+  }
+]
