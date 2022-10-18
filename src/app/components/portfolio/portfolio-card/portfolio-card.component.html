@@ -1,33 +1,24 @@
 <div class="project-card-container">
-  <div *ngFor="let project of projects">
-    <div class="card project-card">
-      <div class="columns">
-        <div class="column is-two-fifths">
-          <img
-            class="project-logo"
-            src="assets/img/projects/{{ project.image }}"
-          />
+  <div class="project-card"*ngFor="let project of projects" [@opacityAnimationUp]="state">
+    <div>
+      <img  class="project-card__img" src="assets/img/projects/{{ project.image }}"/>
+    </div>
+    <div class="project-card__content">
+      <h1>{{ project.name }}</h1>
+      <h5>{{ project.duration }}</h5>
+      <div class="tags" >
+        <div *ngFor="let tag of project.tags">
+          {{ tag }}
         </div>
-        <div class="column">
-          <a *ngIf="project.url" href="{{ project.url }}" target="_blank">
-            <button class="color-btn linkproj">Link to Project</button>
-          </a>
-
-          <h2>{{ project.name }}</h2>
-          <h1 class="duration">{{ project.duration }}</h1>
-
-          <div style="display: inline" *ngFor="let tag of project.tags">
-            <span class="tag is-warning">
-              <i class="fas fa-trophy"></i>
-            </span>
-            <span class="tag ">
-              {{ tag }}
-            </span>
-          </div>
-
-          <p>{{ project.description }}</p>
-          <br />
-        </div>
+      </div>
+      <p>{{ project.description }}</p>
+      <div class="project-btn__container">
+        <a *ngIf="project.url" href="{{ project.url }}" target="_blank">
+          <button class="btn btn-url">Link to Project</button>
+        </a>
+        <a *ngIf="project.source" href="{{ project.source }}" target="_blank">
+          <button class="btn btn-url">Source code</button>
+        </a>
       </div>
     </div>
   </div>
