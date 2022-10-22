@@ -30,7 +30,7 @@ export class PortfolioCardComponent implements AfterViewInit {
 
   @Input() public projects!: ProjectModel[];
 
-  state = 'hide'
+  state = 'hide';
 
   constructor(public element: ElementRef) { }
 
@@ -38,8 +38,8 @@ export class PortfolioCardComponent implements AfterViewInit {
   checkScroll() {
     const componentPosition = this.element.nativeElement.offsetTop
     const scrollPosition = window.pageYOffset
-    if (scrollPosition >= componentPosition - 400) {
-      this.state = 'show'
+    if (scrollPosition >= componentPosition + 1600) {
+      this.state = 'show';
     } else {
       this.state = 'hide'
     }

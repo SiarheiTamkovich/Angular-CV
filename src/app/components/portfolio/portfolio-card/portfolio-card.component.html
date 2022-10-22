@@ -1,7 +1,7 @@
 <div class="project-card-container">
-  <div class="project-card"*ngFor="let project of projects" [@opacityAnimationUp]="state">
+  <div class="project-card" *ngFor="let project of projects" [@opacityAnimationUp]="state">
     <div>
-      <img  class="project-card__img" src="assets/img/projects/{{ project.image }}"/>
+      <img class="project-card__img" src="assets/img/projects/{{ project.image }}"/>
     </div>
     <div class="project-card__content">
       <h1>{{ project.name }}</h1>
