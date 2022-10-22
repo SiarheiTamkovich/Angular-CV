@@ -17,6 +17,7 @@ import { CertificatesComponent } from './components/certificates/certificates.co
 import { CertificatesCardComponent } from './components/certificates/certificates-card/certificates-card.component';
 import { PortfolioCardComponent } from './components/portfolio/portfolio-card/portfolio-card.component';
 import { PortfolioIconsComponent } from './components/portfolio/portfolio-icons/portfolio-icons.component';
+import { ExperienceComponent } from './components/experience/experience.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { PortfolioIconsComponent } from './components/portfolio/portfolio-icons/
     CertificatesComponent,
     CertificatesCardComponent,
     PortfolioCardComponent,
-    PortfolioIconsComponent
+    PortfolioIconsComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,
