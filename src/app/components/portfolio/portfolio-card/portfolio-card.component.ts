@@ -55,4 +55,14 @@ export class PortfolioCardComponent implements AfterViewInit {
     });
   }
 
+  tagDict = new Map([
+    ['Angular', 'is-primary'],
+    ['React', 'is-primary'],
+    ['JavaScript', 'is-primary'],
+    ['Docker', 'is-link is-light'],
+    ['MongoDB', 'is-link'],
+    ['html', 'color-pink'],
+    ['css', 'color-green']
+  ]);
+
 }

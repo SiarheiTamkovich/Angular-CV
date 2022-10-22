@@ -24,13 +24,19 @@
   background: rgba(255,255,255,.1);
   box-shadow: 20px 20px 50px rgb(0 0 0 / 50%);
   border-top: 1px solid rgba(255,255,255,.5);
-    border-left: 1px solid rgba(255,255,255,.5);
+  border-left: 1px solid rgba(255,255,255,.5);
+  backdrop-filter: blur(5px);
 }
 
 .project-card__img {
   width: 100%;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  opacity: 80%;
+}
+
+.project-card__img:hover {
+  opacity: 1;
 }
 
 .project-card__content {
@@ -72,4 +78,27 @@
   font-size: 14px;
   padding: 0;
   margin: 0;
+}
+
+.tags-container {
+  display: flex;
+  margin-left: -2px;
+}
+
+.tag {
+  padding: 2px 5px 4px 5px;
+  margin: 2px;
+  border-radius: 10px;
+  font-size: 16px;
+  align-items: center;
+}
+
+.color-pink {
+  background-color: #00d1b2;
+  color: #fff;
+}
+
+.color-green {
+  background-color: #48c774;
+  color: #fff;
 }

@@ -1,0 +1,84 @@
+.bubbling-icon {
+  position: absolute;
+}
+
+.bubbling-icon:first-child {
+  animation: icon-move 15s linear infinite;
+  left: 1%;
+}
+
+.bubbling-icon:nth-child(2) {
+  animation: icon-move 35s linear infinite;
+  left: 9.3%;
+}
+
+.bubbling-icon:nth-child(3) {
+  animation: icon-move 12s linear infinite;
+  left: 17.6%;
+}
+
+.bubbling-icon:nth-child(4) {
+  animation: icon-move 32s linear infinite;
+  left: 25.9%;
+}
+
+.bubbling-icon:nth-child(5) {
+  animation: icon-move 21s linear infinite;
+  left: 34.2%;
+}
+
+.bubbling-icon:nth-child(6) {
+  animation: icon-move 42s linear infinite;
+  left: 42.5%;
+}
+
+.bubbling-icon:nth-child(7) {
+  animation: icon-move 19s linear infinite;
+  left: 50.8%;
+}
+
+.bubbling-icon:nth-child(8) {
+  animation: icon-move 37s linear infinite;
+  left: 59.1%;
+}
+
+.bubbling-icon:nth-child(9) {
+  animation: icon-move 23s linear infinite;
+  left: 67.4%;
+}
+
+.bubbling-icon:nth-child(10) {
+  animation: icon-move 43s linear infinite;
+  left: 75.7%;
+}
+
+.bubbling-icon:nth-child(11) {
+  animation: icon-move 18s linear infinite;
+  left: 84%;
+}
+
+.bubbling-icon:nth-child(12) {
+  animation: icon-move 39s linear infinite;
+  left: 92.3%;
+}
+
+@keyframes icon-move {
+  0% {
+    top: 105%;
+    opacity: 100%;
+  }
+
+  70% {
+    opacity: 100%;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    top: 5%;
+    opacity: 0;
+  }
+}
+

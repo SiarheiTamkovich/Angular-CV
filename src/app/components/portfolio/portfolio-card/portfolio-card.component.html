@@ -6,8 +6,8 @@
     <div class="project-card__content">
       <h1>{{ project.name }}</h1>
       <h5>{{ project.duration }}</h5>
-      <div class="tags" >
-        <div *ngFor="let tag of project.tags">
+      <div class="tags-container" >
+        <div class="tag {{tagDict.get(tag)}}" *ngFor="let tag of project.tags">
           {{ tag }}
         </div>
       </div>

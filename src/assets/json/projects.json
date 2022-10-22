@@ -1,6 +1,6 @@
 [
   {
-    "tags": ["HTML", "CSS"],
+    "tags": ["html", "css"],
     "image": "step-stimulas.jpg",
     "name": "Stimulas",
     "duration": "August 2021",
@@ -9,7 +9,7 @@
     "source": "https://github.com/SiarheiTamkovich/Siarhei_Tamkovich_Step_21/tree/master/Projects/Stimulas"
   },
   {
-    "tags": ["HTML", "CSS"],
+    "tags": ["html", "css"],
     "image": "step-hightech.jpg",
     "name": "Hightech",
     "duration": "September 2021",
