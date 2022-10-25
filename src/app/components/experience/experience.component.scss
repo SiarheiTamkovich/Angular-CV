@@ -6,17 +6,17 @@
   margin-top: 5vh;
 }
 
-.experience_content__Ye5R8 {
+.experience-content {
   width: 100%;
   margin: auto;
 }
 
-.experience_content__Ye5R8 .experience_verticalTimeline__uAJr0 .experience_iconStyle__1_JoS {
+.experience-iconStyle {
   background: #1763a6;
   color: #fff;
 }
 
-.experience_content__Ye5R8 .experience_verticalTimeline__uAJr0 {
+.experience-verticalTimeline {
   max-width: 100%;
 }
 
@@ -51,7 +51,7 @@
   box-sizing: border-box;
 }
 
-.vertical-timeline--animate .vertical-timeline-element-icon.bounce-in {
+.vertical-timeline--animate .vertical-timeline-element-icon .bounce-in {
   visibility: visible;
   -webkit-animation: cd-bounce-1 .6s;
   animation: cd-bounce-1 .6s;
@@ -83,7 +83,7 @@
   margin-top: -12px;
 }
 
-.vertical-timeline--animate .vertical-timeline-element-content.bounce-in {
+.vertical-timeline--animate .vertical-timeline-element-content .bounce-in {
   visibility: visible;
   -webkit-animation: cd-bounce-2 .6s;
   animation: cd-bounce-2 .6s;
@@ -97,9 +97,12 @@
   position: relative;
   margin-left: 60px;
   background: #fff;
-  border-radius: .25em;
+  border-radius: 0.5em;
   padding: 1em;
   box-shadow: 0 3px 0 #ddd;
+  color:#111;
+  border-top:3px solid #1763A6;
+  box-shadow: 10px 10px 20px rgb(0 0 0 / 50%);
 }
 
 .vertical-timeline-element-content p {
@@ -107,65 +110,50 @@
   line-height: 1.6;
 }
 
-.experience_contentContainer__IKGKT .experience_elementBody__9PXro ul {
+.experience-contentContainer .experience_elementBody__9PXro ul {
   font-size: inherit;
   margin-left: 20px;
 }
 
 .vertical-timeline-element-content-arrow {
-  content: "";
   position: absolute;
-  top: 16px;
+  top: 10px;
   right: 100%;
   height: 0;
   width: 0;
-  border: 7px solid transparent;
+  border: 10px solid transparent;
   border-right-color: #fff;
 }
 
-.experience_contentContainer__IKGKT {
+.experience-contentContainer {
   display: flex;
   flex-direction: column;
 }
 
-.experience_contentContainer__IKGKT .experience_headerContainer__nD5Hl {
+.experience-headerContainer {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
 }
 
-.experience_contentContainer__IKGKT .experience_elementBody__9PXro {
-  font-size: 1rem;
-}
-
-.experience_contentContainer__IKGKT .experience_tagContainer__19f2u {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 20px 0;
-}
-
-.experience_contentContainer__IKGKT .experience_headerContainer__nD5Hl .experience_logoContainer__3znIb {
+.experience-logoContainer {
   width: 60px;
   margin: auto 1em auto 0;
 }
 
-.experience_contentContainer__IKGKT .experience_headerContainer__nD5Hl .experience_titleContainer__2Vrdn .experience_elementTitle__J-km4 {
+.experience-titleContainer {
+  margin: auto 0;
+}
+
+.experience-elementTitle {
   font-size: 1.25rem;
 }
 
-.experience_contentContainer__IKGKT .experience_tagContainer__19f2u {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 20px 0;
-}
-
-.experience_contentContainer__IKGKT .experience_elementBody__9PXro {
+.experience-elementBody {
   font-size: 1rem;
 }
 
-.experience_contentContainer__IKGKT .experience_elementBody__9PXro ul {
+.experience-elementBody ul {
   font-size: inherit;
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
 .vertical-timeline-element:after {
@@ -180,19 +168,21 @@
   clear: both;
 }
 
-.tag_tag__3Ni0P {
+.experience-tagContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.experience-tagContainer .tag {
   border: 0;
   background-color: #e0e0e0;
   color: #111;
-  font-size: .875rem;
+  font-size: 0.875rem;
   border-radius: 12px;
   padding: 2px 8px;
   margin: 2px 10px 2px 0;
   white-space: nowrap;
-}
-
-.experience_content__Ye5R8 .experience_verticalTimeline__uAJr0 .experience_date__BPUou {
-  color: var(--txt-experience);
 }
 
 @keyframes cd-bounce-1 {
@@ -238,7 +228,7 @@
 }
 
 @media (min-width: 1024px) {
-  .experience_content__Ye5R8 .experience_verticalTimeline__uAJr0 {
+  .experience-content .experience-verticalTimeline {
     width: 95%;
   }
 }
@@ -294,13 +284,14 @@
     font-size: 1rem;
   }
 
-  .vertical-timeline-element-content .vertical-timeline-element-date {
+  .vertical-timeline-element-date {
     float: left;
-    padding: .8em 0;
-    opacity: .7;
+    padding: 0.8em 0;
+    opacity: 0.7;
+    color: var(--txt-experience);
   }
 
-  .vertical-timeline--two-columns .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content,
+  .vertical-timeline--two-columns .vertical-timeline-element .vertical-timeline-element--right .vertical-timeline-element-content,
   .vertical-timeline--two-columns .vertical-timeline-element:nth-child(2n):not(.vertical-timeline-element--left) .vertical-timeline-element-content {
     float: right;
   }
@@ -312,7 +303,8 @@
     text-align: right;
   }
 
-  .vertical-timeline--two-columns .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content-arrow, .vertical-timeline--two-columns .vertical-timeline-element:nth-child(2n):not(.vertical-timeline-element--left) .vertical-timeline-element-content-arrow {
+  .vertical-timeline--two-columns .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content-arrow,
+  .vertical-timeline--two-columns .vertical-timeline-element:nth-child(2n):not(.vertical-timeline-element--left) .vertical-timeline-element-content-arrow {
     top: 24px;
     left: auto;
     right: 100%;
