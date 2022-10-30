@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "Educational course (Frontend Development)",
+    "companyName": "Computer Academy STEP",
+    "companyLink": "https://itstep.org/",
+    "companyLogo": "step_it_eng_short.svg",
+    "description": "Completed full time course in front-end development",
+    "items": [
+      "Introduction to the Web, HTML structure. Practice: creating a simple web page.",
+      "Formatting with CSS. Using external CSS style files. Practice: Text formatting with CSS.",
+      "Introduction to JavaScript. An object, Arrays. Object-oriented programming. Event handling. Browser Object Model. Document Object Model",
+      "React Framework. Building projects with Webpack and other tools."
+    ],
+    "tegs": [
+      "HTML",
+      "HTML5",
+      "CSS",
+      "CSS3",
+      "JavaScript",
+      "JSON, AJAX",
+      "React",
+      "Redux"
+    ],
+    "date": "Jun 2021 - February 2022"
+  },
+  {
+    "id": 2,
+    "name": "Educational course (Frontend Development)",
+    "companyName": "Computer Academy STEP",
+    "companyLink": "https://itstep.org/",
+    "companyLogo": "step_it_eng_short.svg",
+    "description": "Completed full time course in front-end development",
+    "items": [
+      "Introduction to the Web, HTML structure. Practice: creating a simple web page.",
+      "Formatting with CSS. Using external CSS style files. Practice: Text formatting with CSS.",
+      "Introduction to JavaScript. An object, Arrays. Object-oriented programming. Event handling. Browser Object Model. Document Object Model",
+      "React Framework. Building projects with Webpack and other tools."
+    ],
+    "tegs": [
+      "HTML",
+      "HTML5",
+      "CSS",
+      "CSS3",
+      "JavaScript",
+      "JSON, AJAX",
+      "React",
+      "Redux"
+    ],
+    "date": "Jun 2021 - February 2022"
+  }
+]

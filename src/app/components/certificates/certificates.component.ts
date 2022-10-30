@@ -1,7 +1,7 @@
 import { Component, ElementRef, HostListener } from '@angular/core';
 
 import certificates from '../../../assets/json/certificates.json';
-import { CertificateModel } from './certificate.model';
+import { CertificateModel } from './certificates.model';
 
 @Component({
   selector: 'app-certificates',

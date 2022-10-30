@@ -2,7 +2,7 @@ import { AfterViewInit, Component, ElementRef, HostListener, Input } from '@angu
 import { animate, state, style, transition, trigger } from '@angular/animations';
 
 import 'vanilla-tilt';
-import { CertificateModel } from '../certificate.model';
+import { CertificateModel } from '../certificates.model';
 declare const VanillaTilt: { init: (arg0: NodeListOf<Element>, arg1: { max: number; speed: number; }) => void; };
 
 const styleOn = style({
@@ -41,6 +41,7 @@ export class CertificatesCardComponent implements AfterViewInit {
   checkScroll() {
     const componentPosition = this.element.nativeElement.offsetTop
     const scrollPosition = window.pageYOffset
+
     if (scrollPosition >= componentPosition - 300) {
       this.state = 'show'
     } else {

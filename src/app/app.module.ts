@@ -18,6 +18,7 @@ import { CertificatesCardComponent } from './components/certificates/certificate
 import { PortfolioCardComponent } from './components/portfolio/portfolio-card/portfolio-card.component';
 import { PortfolioIconsComponent } from './components/portfolio/portfolio-icons/portfolio-icons.component';
 import { ExperienceComponent } from './components/experience/experience.component';
+import { ObserveElementDirective } from './directives/observe-element.directive';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ExperienceComponent } from './components/experience/experience.componen
     CertificatesCardComponent,
     PortfolioCardComponent,
     PortfolioIconsComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    ObserveElementDirective
   ],
   imports: [
     BrowserModule,

@@ -14,4 +14,8 @@ export class TrialComponent {
 
   constructor() { }
 
+  isIntersecting (status: boolean, index: number) {
+  //  console.log('Element #' + index + ' is intersecting ' + status)
+  }
+
 }

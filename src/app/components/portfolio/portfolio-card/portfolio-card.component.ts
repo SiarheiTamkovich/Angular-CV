@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, ElementRef, HostListener, Input } from '@angular/core';
-import { ProjectModel } from '../project.model';
+import { ProjectModel } from '../portfolio.model';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 
 declare const VanillaTilt: { init: (arg0: NodeListOf<Element>, arg1: { max: number; speed: number; }) => void; };

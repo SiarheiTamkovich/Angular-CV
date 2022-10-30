@@ -11,11 +11,6 @@
   margin: auto;
 }
 
-.experience-iconStyle {
-  background: #1763a6;
-  color: #fff;
-}
-
 .experience-verticalTimeline {
   max-width: 100%;
 }
@@ -23,10 +18,15 @@
 .vertical-timeline {
   width: 95%;
   max-width: 1170px;
-  margin: 0 auto;
+  margin: 2em auto;
   position: relative;
   padding: 2em 0;
 }
+
+.vertical-timeline * {
+  box-sizing: border-box;
+}
+
 
 .vertical-timeline:before {
   content: "";
@@ -47,46 +47,45 @@
   margin: 2em 0;
 }
 
-.vertical-timeline * {
-  box-sizing: border-box;
+
+.is-hidden {
+  visibility: hidden;
 }
 
-.vertical-timeline--animate .vertical-timeline-element-icon .bounce-in {
-  visibility: visible;
-  -webkit-animation: cd-bounce-1 .6s;
-  animation: cd-bounce-1 .6s;
-}
-
-.vertical-timeline-element-icon {
-  transform: translateZ(0);
-  backface-visibility: hidden;
-}
-
-.vertical-timeline-element-icon {
+.vertical-timeline-element__icon {
   position: absolute;
   top: 0;
   left: 0;
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  background: #1763a6;
+  color: #fff;
   box-shadow: 0 0 0 4px #fff,inset 0 2px 0 rgba(0,0,0,.08),0 3px 0 4px rgba(0,0,0,.05);
+  transform: translateZ(0);
+  backface-visibility: hidden;
+
+  &--is-intersecting {
+    visibility: visible;
+    animation: pulsation 0.6s;
+  }
+
+  svg {
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    margin-left: -12px;
+    margin-top: -12px;
+  }
 }
 
-.vertical-timeline-element-icon svg {
-  display: block;
-  width: 24px;
-  height: 24px;
-  position: relative;
-  left: 50%;
-  top: 50%;
-  margin-left: -12px;
-  margin-top: -12px;
-}
-
-.vertical-timeline--animate .vertical-timeline-element-content .bounce-in {
+.bounce-in {
   visibility: visible;
-  -webkit-animation: cd-bounce-2 .6s;
-  animation: cd-bounce-2 .6s;
+  -webkit-animation: move-right-to-left 0.6s;
+  animation: move-right-to-left 0.6s;
 }
 
 .vertical-timeline-element > div {
@@ -110,7 +109,7 @@
   line-height: 1.6;
 }
 
-.experience-contentContainer .experience_elementBody__9PXro ul {
+.experience-contentContainer .experience-elementBody ul {
   font-size: inherit;
   margin-left: 20px;
 }
@@ -185,10 +184,15 @@
   white-space: nowrap;
 }
 
-@keyframes cd-bounce-1 {
+.experience_date {
+  font-size: 18px;
+}
+
+
+@keyframes pulsation {
   0% {
     opacity: 0;
-    transform: scale(.5);
+    transform: scale(0.5);
   }
   60% {
     opacity: 1;
@@ -199,7 +203,7 @@
   }
 }
 
-@keyframes cd-bounce-2 {
+@keyframes move-left-to-right {
   0% {
     opacity: 0;
     transform: translateX(-100px);
@@ -213,7 +217,7 @@
   }
 }
 
-@keyframes cd-bounce-2-inverse {
+@keyframes move-right-to-left {
   0% {
     opacity: 0;
     transform: translateX(100px);
@@ -234,10 +238,10 @@
 }
 
 @media screen and (min-width: 1169px) {
-  .vertical-timeline--animate .vertical-timeline-element-content.bounce-in {
+  .bounce-in {
     visibility: visible;
-    -webkit-animation: cd-bounce-2-inverse .6s;
-    animation: cd-bounce-2-inverse .6s;
+    -webkit-animation: move-left-to-right 0.6s;
+    animation: move-left-to-right 0.6s;
   }
 }
 
@@ -248,10 +252,10 @@
   }
 
   .vertical-timeline-element {
-    margin: 4em 0;
+    margin: 2em 0;
   }
 
-  .vertical-timeline--two-columns .vertical-timeline-element-icon {
+  .vertical-timeline--two-columns .vertical-timeline-element__icon {
     width: 60px;
     height: 60px;
     left: 50%;

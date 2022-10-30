@@ -1,71 +1,66 @@
 <section class="experience-page">
   <div class="container experience-page-content">
     <h2 class="title">Experience</h2>
-    <h3 class="subtitle">My education</h3>
+    <h3 class="subtitle">My jobs</h3>
   </div>
   <div class="experience-content">
     <div class="experience-verticalTimeline vertical-timeline vertical-timeline--animate vertical-timeline--two-columns">
-      <div class="vertical-timeline-element">
-        <span class="experience-iconStyle vertical-timeline-element-icon bounce-in">
+      <div
+        class="vertical-timeline-element"
+        *ngFor="let job of jobs"
+      >
+        <span class="vertical-timeline-element__icon is-hidden"
+          appObserveElement
+          #intersection="intersection"
+          [class.is-hidden]="!isComponentVisible"
+          [class.vertical-timeline-element__icon--is-intersecting]="intersection._isIntersecting"
+          [isContinuous]="false"
+        >
           <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
             <path fill="none" d="M0 0h24v24H0z"></path>
             <path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"></path>
           </svg>
         </span>
-        <div class="vertical-timeline-element-content bounce-in">
+        <div
+          class="vertical-timeline-element-content"
+          appObserveElement
+          #intersection="intersection"
+          [class.is-hidden]="!isComponentVisible"
+          [class.bounce-in]="intersection._isIntersecting"
+          [isContinuous]="false"
+        >
           <div class="vertical-timeline-element-content-arrow"></div>
           <div class="experience-contentContainer">
             <div class="experience-headerContainer">
               <div class="experience-logoContainer">
-                <a href="https://itstep.org/" target="_blank" rel="noreferrer">
+                <a href="{{ job.companyLink }}" target="_blank" rel="noreferrer">
                   <span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative">
-                    <img alt="it-step" src="../../../assets/img/logo/step_it_eng_short.svg">
+                    <img alt="it-step" src="../../../assets/img/logo/{{job.companyLogo}}">
                   </span>
                 </a>
               </div>
               <div class="experience-titleContainer">
                 <div class="vertical-timeline-element-title experience-elementTitle">
-                  <strong>Educational course (Frontend Development)</strong>
+                  <strong>{{ job.name }}</strong>
                 </div>
                 <a class="vertical-timeline-element-subtitle experience-elementSubtitle" href="https://itstep.org/" target="_blank" rel="noreferrer">
-                    <strong>Computer Academy STEP</strong>
+                    <strong>{{ job.companyName }}</strong>
                 </a>
               </div>
             </div>
             <div class="experience-elementBody">
-              <p>Completed full time course in front-end development</p>
-              <ul>
-                <li>Introduction to the Web, HTML structure. Practice: creating a simple web page.</li>
-                <li>Formatting with CSS. Using external CSS style files. Practice: Text formatting with CSS.</li>
-                <li>Introduction to JavaScript. An object, Arrays. Object-oriented programming. Event handling. Browser Object Model. Document Object Model.</li>
-                <li>React Framework. Building projects with Webpack and other tools.</li>
+              <p>{{ job.description }}</p>
+              <ul *ngFor="let item of job.items">
+                <li>{{ item }}</li>
               </ul>
             </div>
             <div class="experience-tagContainer">
-              <div class="tag">
-                <span>HTML</span>
-              </div>
-              <div class="tag">
-                <span>HTML5</span>
-              </div>
-              <div class="tag">
-                <span>CSS</span>
-              </div>
-              <div class="tag">
-                <span>JavaScript</span>
-              </div>
-              <div class="tag">
-                <span>JSON, AJAX</span>
-              </div>
-              <div class="tag">
-                <span>React</span>
-              </div>
-              <div class="tag">
-                <span>Redux</span>
+              <div class="tag" *ngFor="let tag of job.tegs">
+                <span>{{ tag }}</span>
               </div>
             </div>
           </div>
-          <span class="experience_date__BPUou vertical-timeline-element-date">Jun 2021 - February 2022</span>
+          <span class="experience_date vertical-timeline-element-date">{{ job.date }}</span>
         </div>
       </div>
     </div>

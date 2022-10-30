@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import projects from '../../../assets/json/projects.json'
-import { ProjectModel } from './project.model';
+import { ProjectModel } from './portfolio.model';
 
 @Component({
   selector: 'app-portfolio',
