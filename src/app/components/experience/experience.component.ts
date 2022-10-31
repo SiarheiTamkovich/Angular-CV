@@ -17,12 +17,10 @@ export class ExperienceComponent {
 
   @HostListener('window:scroll', ['$event'])
   checkScroll() {
-    const componentPosition = this.element.nativeElement.offsetTop
-    const scrollPosition = window.pageYOffset
-    console.log(componentPosition, '--', scrollPosition)
+    const componentPosition = this.element.nativeElement.offsetTop;
+    const scrollPosition = window.pageYOffset;
     if (scrollPosition >= componentPosition) {
       this.isComponentVisible = true;
-      console.log(this.isComponentVisible)
     }
   }
 }
