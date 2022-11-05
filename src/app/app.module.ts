@@ -19,6 +19,10 @@ import { PortfolioCardComponent } from './components/portfolio/portfolio-card/po
 import { PortfolioIconsComponent } from './components/portfolio/portfolio-icons/portfolio-icons.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { ObserveElementDirective } from './directives/observe-element.directive';
+import { ContactComponent } from './components/contact/contact.component';
+import { ContactService } from './services/contact.service';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -35,16 +39,20 @@ import { ObserveElementDirective } from './directives/observe-element.directive'
     PortfolioCardComponent,
     PortfolioIconsComponent,
     ExperienceComponent,
-    ObserveElementDirective
+    ObserveElementDirective,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
     MaterialModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

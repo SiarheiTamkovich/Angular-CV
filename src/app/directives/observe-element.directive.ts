@@ -26,7 +26,6 @@ export class ObserveElementDirective implements OnDestroy {
 
   constructor (private element: ElementRef) {
     this.subscription = this.createAndObserve();
-    console.log(element.nativeElement)
   }
 
   ngOnDestroy () {
