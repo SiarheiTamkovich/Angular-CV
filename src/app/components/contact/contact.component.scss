@@ -1,16 +1,42 @@
+.contact-page {
+  background: var(--bg-contacts);
+}
+
 .contact-page-content {
   margin-top: 5vh;
 }
 
 .contact-content {
-  width: 100%;
-  margin: auto;
+  width: 95%;
+  max-width: 1170px;
+  margin: 0 auto;
+  position: relative;
+  padding: 1em 0;
 }
 
-.contact-content .conteiner {
+.social-links-container
+.contact-form-container {
   margin: 0 auto;
 }
 
-mat-form-field {
-  font-family: 'Montserrat Alternates-Light', sans-serif;
+.form {
+  display: flex;
+  flex-direction: column;
 }
+
+.form-control {
+  max-width: 300px;
+  font-family: 'Montserrat Alternates-Light', sans-serif;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  margin: 0.5em 0;
+  padding: 0.5rem;
+}
+
+.form-control input,
+.form-control textarea {
+  color: #000;
+  padding: 0;
+}
+
+

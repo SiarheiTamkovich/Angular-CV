@@ -1,44 +1,40 @@
 <section class="contact-page">
+
   <div class="container contact-page-content">
     <h2 class="title">Contact</h2>
     <h3 class="subtitle">Get in touch</h3>
   </div>
+
   <div class="contact-content">
-    <div class="container">
-      <form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
-        <mat-form-field appearance="fill">
+    <div class="social-links-container">
+
+    </div>
+
+    <div class="contact-form-container">
+      <form class="form" [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+
+        <h4>Send me a message</h4>
+
+        <mat-form-field class="form-control">
           <mat-label>Enter your email</mat-label>
-          <input matInput [formControl]="email" placeholder="email@example.com" required>
+          <input matInput [formControl]="email" placeholder="email@example.com"/>
           <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
         </mat-form-field>
-        <div class="form-group">
-          <label for="fullname">Full Name</label>
-          <input
-            type="text"
-            class="form-control"
-            name="Fullname"
-            placeholder="Full Name"
-            formControlName="Fullname"
-          />
-        </div>
 
-        <div class="form-group">
-          <label for="comment">Comment</label>
-          <textarea
-            class="form-control"
-            formControlName="Comment"
-            name="Comment"
-          >
-          </textarea>
-        </div>
-        <button
-          type="submit"
-          class="btn btn-primary"
-          [disabled]="!FormData.valid"
-        >
-          Submit
-        </button>
+        <mat-form-field class="form-control">
+          <mat-label>Enter you name</mat-label>
+          <input type="text" matInput [formControl]="name"/>
+          <mat-error *ngIf="name.invalid">Please enter your name</mat-error>
+        </mat-form-field>
 
+        <mat-form-field class="form-control">
+          <mat-label>You message</mat-label>
+          <textarea class="form-control"  matInput [formControl]="message"></textarea>
+          <mat-error *ngIf="message.invalid">Please enter your message</mat-error>
+        </mat-form-field>
+
+        <button type="submit" class="btn btn-primary" [disabled]="!form.valid">Submit</button>
+      
       </form>
     </div>
   </div>
