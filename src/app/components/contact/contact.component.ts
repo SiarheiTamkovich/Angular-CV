@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormBuilder, FormControl, Validators } from '@angular/forms'
 import { ContactService } from '../../services/contact.service';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { faPhone, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+import { faDiscord, faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 
 @Component({
@@ -15,7 +18,14 @@ export class ContactComponent {
   name: FormControl = new FormControl('', [Validators.required]);
   message: FormControl = new FormControl('', [Validators.required, Validators.maxLength(256)]);
 
-  constructor(private builder: FormBuilder, private contact: ContactService) { 
+  faEnvelope = faEnvelope;
+  faPaperPlane = faPaperPlane;
+  faPhone = faPhone;
+  faDiscord = faDiscord;
+  faLinkedinIn = faLinkedinIn;
+  faGithub = faGithub;
+
+  constructor(private builder: FormBuilder, private contact: ContactService) {
     this.form = this.builder.group({
       email: this.email,
       name: this.name,

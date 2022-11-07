@@ -84,3 +84,11 @@ section {
   color: #fff;
   outline-offset: 15px;
 }
+
+.btn:disabled {
+  outline: none;
+  color: var(--text);
+  background-color: var(--bg-btn);
+  outline-color: #fff;
+  opacity: 0.3;
+}
