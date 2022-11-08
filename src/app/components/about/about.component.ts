@@ -37,7 +37,7 @@ const styleRightOff = style({
 })
 export class AboutComponent {
 
-  state = 'hide'
+  state = 'hide';
 
   constructor(public element: ElementRef) { }
 

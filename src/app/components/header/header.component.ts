@@ -8,6 +8,7 @@ import { Component, HostListener } from '@angular/core';
 export class HeaderComponent {
 
   public isSticky: boolean = false;
+  public isArrowApVisible = false;
 
   constructor() { }
 
@@ -15,6 +16,5 @@ export class HeaderComponent {
   checkScroll() {
     this.isSticky = window.pageYOffset >= 80;
   }
-
 
 }

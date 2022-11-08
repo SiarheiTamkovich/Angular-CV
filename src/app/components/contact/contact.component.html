@@ -6,7 +6,7 @@
   </div>
 
   <div class="contact-content">
-    <div class="social-links-container">
+    <div class="social-links-container" [@scaleAnimation]="state">
       <ul class="contacts__list">
         <li>
           <a class="contacts__link" href="mailto:mpg2000@mail.ru" target="_blank" title="mpg2000@mail.ru">
@@ -47,7 +47,7 @@
       </ul>
     </div>
 
-    <div class="contact-form-container">
+    <div class="contact-form-container" [@scaleAnimation]="state">
       <form class="form" [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
 
         <h4>Send me a message</h4>

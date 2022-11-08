@@ -23,6 +23,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { ContactService } from './services/contact.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     PortfolioIconsComponent,
     ExperienceComponent,
     ObserveElementDirective,
-    ContactComponent
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
