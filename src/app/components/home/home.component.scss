@@ -37,11 +37,17 @@
   display: inline-block;
   font-size: 1.75rem;
   margin-top: 5em;
-  transition: color .3s ease;
+  transition: all .6s ease;
   -webkit-animation: arrow_bounce 2s ease infinite;
   animation: arrow_bounce 2s ease infinite;
   cursor: pointer;
-  fill: yellow;
+  color: var(--text);
+  transform: translate();
+}
+
+.down-arrow:hover {
+  animation: none;
+  scale: 1.1;
 }
 
 @keyframes arrow_bounce {
