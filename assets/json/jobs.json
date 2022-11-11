@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Educational course (Frontend Development)",
+    "companyName": "Computer Academy STEP",
+    "companyLink": "https://itstep.org/",
+    "companyLogo": "step_it_eng_short.svg",
+    "description": "Completed full time course in front-end development",
+    "items": [
+      "Introduction to the Web, HTML structure. Practice: creating a simple web page.",
+      "Formatting with CSS. Using external CSS style files. Practice: Text formatting with CSS.",
+      "Introduction to JavaScript. An object, Arrays. Object-oriented programming. Event handling. Browser Object Model. Document Object Model",
+      "React Framework. Building projects with Webpack and other tools."
+    ],
+    "tegs": [
+      "HTML",
+      "HTML5",
+      "CSS",
+      "CSS3",
+      "JavaScript",
+      "JSON, AJAX",
+      "React",
+      "Redux"
+    ],
+    "date": "Jun 2021 - February 2022"
+  },
+  {
+    "id": 2,
+    "name": "Front-end / JavaScript (Online course)",
+    "companyName": "The Rolling Scopes",
+    "companyLink": "https://app.rs.school/cv/0c34073a-20f1-4004-af90-d13e52f9afc7/",
+    "companyLogo": "rs_school_js.svg",
+    "description": "Completed online course in front-end development",
+    "items": [
+      "Fundamentals of HTML and CSS", "Basic data structures",
+      "Core JS", "Asynchronous programming", "TypeScript",
+      "DOM, DOM Events, Browser API", "Git, GitHub, commit, pull request",
+      "Fundamentals of NodeJS"
+    ],
+    "tegs": [
+      "HTML",
+      "CSS",
+      "GitHub",
+      "JavaScript",
+      "TypeScript",
+      "Core JS"
+    ],
+    "date": "September 2021 - April 2022"
+  },
+  {
+    "id": 3,
+    "name": "Angular / JavaScript (Online course)",
+    "companyName": "The Rolling Scopes",
+    "companyLink": "https://app.rs.school/cv/0c34073a-20f1-4004-af90-d13e52f9afc7/",
+    "companyLogo": "rs_school_js.svg",
+    "description": "Completed online course in Angular framework",
+    "items": [
+      "TypeScript & Angular basics", "Directives & Pipes",
+      "Routing", "RxJS & Observables","HTTP", "Forms",
+      "Redux & NgRx", "Unit testing"
+    ],
+    "tegs": [
+      "Angular",
+      "TypeScript",
+      "RxJS",
+      "Redux",
+      "NgRx"
+    ],
+    "date": "March 2022 - May 2022"
+  },
+  {
+    "id": 4,
+    "name": "NodeJS (Node.js online course)",
+    "companyName": "The Rolling Scopes",
+    "companyLink": "https://app.rs.school/cv/0c34073a-20f1-4004-af90-d13e52f9afc7/",
+    "companyLogo": "rs_school_js.svg",
+    "description": "Completed online course in Node.js",
+    "items": [
+      "Node.js basics", "Simple CRUD API", " Streams API", "Swagger", "Command line interface",
+      "Websocket", "Containerization using Docker","TypeORM + PostgreSQL basics",
+      "Node.js Cluster API", "GraphQL basics", "Authorization with JWT", 
+      "Microservices", "Worker Threads","Child Processes", "Nest.js"
+    ],
+    "tegs": [
+      "NodeJS",
+      "Swagger",
+      "Docker",
+      "TypeORM",
+      "PostgreSQL",
+      "JWT",
+      "CLI",
+      "Microservices",
+      "GraphQL",
+      "Nest"
+    ],
+    "date": "May 2022 - August 2022"
+  }
+]
