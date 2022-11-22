@@ -16,6 +16,10 @@
   background-color: var(--bg-sticky);
 }
 
+.active {
+  background-color: var(--bg-active);
+}
+
 .navbar-container {
   min-width: 550px;
   max-width: 1300px;

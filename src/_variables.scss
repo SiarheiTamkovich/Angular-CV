@@ -1,6 +1,7 @@
 :root {
   --unit: 4px;
   --bg:             #000000de;
+  --bg-active:      #2f305862;
   --bg-blend-mode:  #313131;
   --bg-sticky:      #000000ab;
   --bg-btn:         #00000031;
@@ -20,6 +21,7 @@
 
 .light {
   --bg:             #fff;
+  --bg-active:      #b2b3c162;
   --bg-blend-mode:  #55555500;
   --bg-sticky:      #d7f0e9;
   --bg-btn:         #fff;

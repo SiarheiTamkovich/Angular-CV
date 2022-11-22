@@ -42,7 +42,7 @@ import { FooterComponent } from './components/footer/footer.component';
     ExperienceComponent,
     ObserveElementDirective,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
