@@ -12,7 +12,6 @@ export class HeaderComponent {
   offsetElements!: OffsetElementsModel;
 
   public isSticky = false;
-  public isArrowApVisible = false;
 
   public isAboutActive = false;
   public isCertificatesActive = false;
@@ -27,18 +26,18 @@ export class HeaderComponent {
     const scrollPosition = window.pageYOffset;
     this.isSticky = scrollPosition >= 80;
 
-    const { 
-      about, 
-      certificates, 
-      portfolio, 
+    const {
+      about,
+      certificates,
+      portfolio,
       experience,
-      contact 
+      contact
     } = this.offsetElements;
 
     if (
-      about !== undefined && 
-      certificates !== undefined && 
-      scrollPosition >= about && 
+      about !== undefined &&
+      certificates !== undefined &&
+      scrollPosition >= about &&
       scrollPosition < certificates
       ) {
           this.isAboutActive = true;
@@ -47,9 +46,9 @@ export class HeaderComponent {
     }
 
     if (
-      certificates !== undefined && 
+      certificates !== undefined &&
       portfolio !== undefined &&
-      scrollPosition >= certificates && 
+      scrollPosition >= certificates &&
       scrollPosition < portfolio
       ) {
           this.isCertificatesActive = true;
@@ -58,9 +57,9 @@ export class HeaderComponent {
     }
 
     if (
-      portfolio !== undefined && 
+      portfolio !== undefined &&
       experience !== undefined &&
-      scrollPosition >= portfolio && 
+      scrollPosition >= portfolio &&
       scrollPosition <= experience
       ) {
           this.isPortfolioActive = true;
@@ -69,9 +68,9 @@ export class HeaderComponent {
     }
 
     if (
-      experience !== undefined && 
+      experience !== undefined &&
       contact !== undefined &&
-      scrollPosition >= experience && 
+      scrollPosition >= experience &&
       scrollPosition <= contact
       ) {
           this.isExperienceActive = true;
@@ -81,12 +80,11 @@ export class HeaderComponent {
 
     if (
       contact !== undefined &&
-      scrollPosition >= contact 
+      scrollPosition >= contact
       ) {
           this.isContactActive = true;
         } else {
       this.isContactActive = false;
     }
   }
-
 }
