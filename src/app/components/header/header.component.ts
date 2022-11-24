@@ -19,7 +19,13 @@ export class HeaderComponent {
   public isExperienceActive = false;
   public isContactActive = false;
 
+  public isBurgerActive = false;
+
   constructor() { }
+
+  public burgerOpen() {
+    this.isBurgerActive = !this.isBurgerActive;
+  }
 
   @HostListener('window:scroll', ['$event'])
   checkScroll() {
@@ -70,8 +76,8 @@ export class HeaderComponent {
     if (
       experience !== undefined &&
       contact !== undefined &&
-      scrollPosition >= experience &&
-      scrollPosition <= contact
+      scrollPosition > experience &&
+      scrollPosition < contact
       ) {
           this.isExperienceActive = true;
         } else {
