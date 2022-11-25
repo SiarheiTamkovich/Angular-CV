@@ -109,12 +109,11 @@
   transition: border .8s ease;
 
   &:hover {
-    top: 10px;
-    left: 10px;
+    left: 9px;
     border: 1px solid var(--btn-border);
     border-radius: 6px;
   }
-  
+
   span,
   span::before,
   span::after {
@@ -130,7 +129,7 @@
   span::before {
     top: -8px;
   }
-  
+
   span::after {
     top: 8px;
   }
@@ -139,7 +138,7 @@
     border: 2px solid var(--btn-border);
     border-radius: 6px;
   }
-  
+
   &.active > span  {
     background: transparent;
   }
@@ -157,12 +156,12 @@
   &.active > span::after  {
     transform: rotate(225deg);
   }
-  
+
 }
 
 
 @media only screen and (max-width: 600px) {
-  
+
   .menu__toggler {
     display: flex;
   }

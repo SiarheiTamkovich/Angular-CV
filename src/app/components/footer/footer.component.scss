@@ -12,10 +12,18 @@
 .copyright {
   font-size: 10px;
   text-align: center;
-  opacity: 0.8;
+  opacity: 0.5;
 }
 
 .copyright a {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--text-subtitle);
+  opacity: 0.8;
+  transition: 0.1s;
+
+  &:hover{
+    opacity: 1;
+    font-weight: 600;
+  }
 }
+
