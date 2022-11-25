@@ -1,0 +1,315 @@
+.experience-page {
+  background: var(--bg-experience);
+}
+
+.experience-page-content {
+  margin-top: 5vh;
+}
+
+.experience-content {
+  width: 100%;
+  margin: auto;
+}
+
+.experience-verticalTimeline {
+  max-width: 100%;
+}
+
+.vertical-timeline {
+  width: 95%;
+  max-width: 1170px;
+  margin: 2em auto;
+  position: relative;
+  padding: 2em 0;
+}
+
+.vertical-timeline * {
+  box-sizing: border-box;
+}
+
+.vertical-timeline:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 18px;
+  height: 100%;
+  width: 4px;
+  background: #fff;
+}
+
+.vertical-timeline-element:first-child {
+  margin-top: 0;
+}
+
+.vertical-timeline-element {
+  position: relative;
+  margin: 2em 0;
+}
+
+.is-hidden {
+  visibility: hidden;
+}
+
+.vertical-timeline-element__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #1763a6;
+  color: #fff;
+  box-shadow: 0 0 0 4px #fff,inset 0 2px 0 rgba(0,0,0,.08),0 3px 0 4px rgba(0,0,0,.05);
+  transform: translateZ(0);
+  backface-visibility: hidden;
+
+  &--is-intersecting {
+    visibility: visible;
+    animation: pulsation 0.6s;
+  }
+
+  svg {
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    margin-left: -12px;
+    margin-top: -12px;
+  }
+}
+
+.bounce-in {
+  visibility: visible;
+  -webkit-animation: move-right-to-left 0.6s;
+  animation: move-right-to-left 0.6s;
+}
+
+.vertical-timeline-element > div {
+  min-height: 1px;
+}
+
+.vertical-timeline-element-content {
+  position: relative;
+  margin-left: 60px;
+  background: #fff;
+  border-radius: 0.5em;
+  padding: 1em;
+  box-shadow: 0 3px 0 #ddd;
+  color:#111;
+  border-top:3px solid #1763A6;
+  box-shadow: 10px 10px 20px rgb(0 0 0 / 50%);
+}
+
+.vertical-timeline-element-content p {
+  margin: 1em 0 0;
+  line-height: 1.6;
+}
+
+.experience-contentContainer .experience-elementBody ul {
+  font-size: inherit;
+  margin-left: 20px;
+}
+
+.vertical-timeline-element-content-arrow {
+  position: absolute;
+  top: 10px;
+  right: 100%;
+  height: 0;
+  width: 0;
+  border: 10px solid transparent;
+  border-right-color: #fff;
+}
+
+.experience-contentContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-headerContainer {
+  display: flex;
+}
+
+.experience-logoContainer {
+  width: 60px;
+  margin: auto 1em auto 0;
+}
+
+.experience-titleContainer {
+  margin: auto 0;
+}
+
+.experience-elementTitle {
+  font-size: 1.25rem;
+}
+
+.experience-elementBody {
+  font-size: 1rem;
+}
+
+.experience-elementBody ul {
+  font-size: inherit;
+  margin-left: 30px;
+}
+
+.vertical-timeline-element:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.vertical-timeline-element-content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.experience-tagContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.experience-tagContainer .tag {
+  border: 0;
+  background-color: #e0e0e0;
+  color: #111;
+  font-size: 0.875rem;
+  border-radius: 12px;
+  padding: 2px 8px;
+  margin: 2px 10px 2px 0;
+  white-space: nowrap;
+}
+
+.experience_date {
+  font-size: 18px;
+}
+
+
+@keyframes pulsation {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes move-left-to-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes move-right-to-left {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media (min-width: 1024px) {
+  .experience-content .experience-verticalTimeline {
+    width: 95%;
+  }
+}
+
+@media screen and (min-width: 1169px) {
+  .bounce-in {
+    visibility: visible;
+    -webkit-animation: move-left-to-right 0.6s;
+    animation: move-left-to-right 0.6s;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+
+  .vertical-timeline-element:first-child {
+    margin-top: 0;
+  }
+
+  .vertical-timeline-element {
+    margin: 2em 0;
+  }
+
+  .vertical-timeline--two-columns .vertical-timeline-element__icon {
+    width: 60px;
+    height: 60px;
+    left: 50%;
+    margin-left: -30px;
+  }
+
+  .vertical-timeline--two-columns .vertical-timeline-element-content {
+    margin-left: 0;
+    padding: 1.5em;
+    width: 44%;
+  }
+
+  .vertical-timeline--two-columns .vertical-timeline-element-content-arrow {
+    top: 24px;
+    left: 100%;
+    transform: rotate(180deg);
+  }
+
+  .vertical-timeline.vertical-timeline--two-columns:before {
+    left: 50%;
+    margin-left: -2px;
+  }
+
+  .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
+    position: absolute;
+    width: 100%;
+    left: 124%;
+    top: 6px;
+    font-size: 16px;
+    font-size: 1rem;
+  }
+
+  .vertical-timeline-element-date {
+    float: left;
+    padding: 0.8em 0;
+    opacity: 0.7;
+    color: var(--txt-experience);
+  }
+
+  .vertical-timeline--two-columns .vertical-timeline-element .vertical-timeline-element--right .vertical-timeline-element-content,
+  .vertical-timeline--two-columns .vertical-timeline-element:nth-child(2n):not(.vertical-timeline-element--left) .vertical-timeline-element-content {
+    float: right;
+  }
+
+  .vertical-timeline--two-columns .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content .vertical-timeline-element-date,
+  .vertical-timeline--two-columns .vertical-timeline-element:nth-child(2n):not(.vertical-timeline-element--left) .vertical-timeline-element-content .vertical-timeline-element-date {
+    left: auto;
+    right: 124%;
+    text-align: right;
+  }
+
+  .vertical-timeline--two-columns .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content-arrow,
+  .vertical-timeline--two-columns .vertical-timeline-element:nth-child(2n):not(.vertical-timeline-element--left) .vertical-timeline-element-content-arrow {
+    top: 24px;
+    left: auto;
+    right: 100%;
+    transform: rotate(0);
+  }
+}

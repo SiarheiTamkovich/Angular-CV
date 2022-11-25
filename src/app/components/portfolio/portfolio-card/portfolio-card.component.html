@@ -1,0 +1,25 @@
+<div class="project-card-container">
+  <div class="project-card" *ngFor="let project of projects" [@opacityAnimationUp]="state">
+    <div>
+      <img class="project-card__img" src="assets/img/projects/{{ project.image }}"/>
+    </div>
+    <div class="project-card__content">
+      <h1>{{ project.name }}</h1>
+      <h5>{{ project.duration }}</h5>
+      <div class="tags-container" >
+        <div class="tag {{tagDict.get(tag)}}" *ngFor="let tag of project.tags">
+          {{ tag }}
+        </div>
+      </div>
+      <p>{{ project.description }}</p>
+      <div class="project-btn__container">
+        <a *ngIf="project.url" href="{{ project.url }}" target="_blank">
+          <button class="btn btn-url">Link to Project</button>
+        </a>
+        <a *ngIf="project.source" href="{{ project.source }}" target="_blank">
+          <button class="btn btn-url">Source code</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

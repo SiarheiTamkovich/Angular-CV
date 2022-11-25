@@ -1,0 +1,18 @@
+<div class="certificates-cards-container">
+  <div
+    class="certificates__card"
+    data-tilt data-tilt-scale="1.04"
+    *ngFor="let certificate of certificates"
+    [@transitAnimationUp]="state"
+    >
+    <div class="certificates__card-img">
+      <img src='assets/img/certificates/{{certificate.img}}' alt="certificate">
+    </div>
+    <div class="certificates__card-about">
+      <h3 class="certificates__card-title">{{certificate.title}}</h3>
+      <p class="certificates__card-description">{{certificate.description}}</p>
+      <a class="certificates__card-link btn" target="_blank"
+        href={{certificate.href}}>View</a>
+    </div>
+  </div>
+</div>

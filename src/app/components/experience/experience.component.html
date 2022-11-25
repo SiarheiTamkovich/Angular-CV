@@ -1,0 +1,68 @@
+<section class="experience-page" id="experience">
+  <div class="container experience-page-content">
+    <h2 class="title">Experience</h2>
+    <h3 class="subtitle">My jobs</h3>
+  </div>
+  <div class="experience-content">
+    <div class="experience-verticalTimeline vertical-timeline vertical-timeline--animate vertical-timeline--two-columns">
+      <div
+        class="vertical-timeline-element"
+        *ngFor="let job of jobs"
+      >
+        <span class="vertical-timeline-element__icon is-hidden"
+          appObserveElement
+          #intersection="intersection"
+          [class.is-hidden]="!isComponentVisible"
+          [class.vertical-timeline-element__icon--is-intersecting]="intersection._isIntersecting"
+          [isContinuous]="false"
+        >
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+            <path fill="none" d="M0 0h24v24H0z"></path>
+            <path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"></path>
+          </svg>
+        </span>
+        <div
+          class="vertical-timeline-element-content"
+          appObserveElement
+          #intersection="intersection"
+          [class.is-hidden]="!isComponentVisible"
+          [class.bounce-in]="intersection._isIntersecting"
+          [isContinuous]="false"
+        >
+          <div class="vertical-timeline-element-content-arrow"></div>
+          <div class="experience-contentContainer">
+            <div class="experience-headerContainer">
+              <div class="experience-logoContainer">
+                <a href="{{ job.companyLink }}" target="_blank" rel="noreferrer">
+                  <span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative">
+                    <img class="logo-img" alt="it-step" src="../../../assets/img/logo/{{job.companyLogo}}">
+                  </span>
+                </a>
+              </div>
+              <div class="experience-titleContainer">
+                <div class="vertical-timeline-element-title experience-elementTitle">
+                  <strong>{{ job.name }}</strong>
+                </div>
+                <a class="vertical-timeline-element-subtitle experience-elementSubtitle" href="https://itstep.org/" target="_blank" rel="noreferrer">
+                    <strong>{{ job.companyName }}</strong>
+                </a>
+              </div>
+            </div>
+            <div class="experience-elementBody">
+              <p>{{ job.description }}</p>
+              <ul *ngFor="let item of job.items">
+                <li>{{ item }}</li>
+              </ul>
+            </div>
+            <div class="experience-tagContainer">
+              <div class="tag" *ngFor="let tag of job.tegs">
+                <span>{{ tag }}</span>
+              </div>
+            </div>
+          </div>
+          <span class="experience_date vertical-timeline-element-date">{{ job.date }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

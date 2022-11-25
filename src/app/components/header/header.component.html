@@ -1,0 +1,28 @@
+<header class="header-container" [ngClass]="{'sticky' : isSticky}">
+  <div class="menu__toggler" [ngClass]="{'active' : isBurgerActive}" (click)="burgerOpen()">
+    <span></span>
+  </div>
+  <nav class="navbar-container">
+    <ul class="navbar-menu" [ngClass]="{'show' : isBurgerActive}">
+      <li class="navbar-menu__item">
+        <a class="navbar-menu__link" href="#home">Home</a>
+      </li>
+      <li class="navbar-menu__item" [ngClass]="{'active' : isAboutActive}">
+        <a class="navbar-menu__link" href="#about">About</a>
+      </li>
+      <li class="navbar-menu__item" [ngClass]="{'active' : isCertificatesActive}">
+        <a class="navbar-menu__link" href="#certificates">Certificates</a>
+      </li>
+      <li class="navbar-menu__item" [ngClass]="{'active' : isPortfolioActive}">
+        <a class="navbar-menu__link" href="#portfolio">Portfolio</a>
+      </li>
+      <li class="navbar-menu__item" [ngClass]="{'active' : isExperienceActive}">
+        <a class="navbar-menu__link" href="#experience">Experience</a>
+      </li>
+      <li class="navbar-menu__item" [ngClass]="{'active' : isContactActive}">
+        <a class="navbar-menu__link" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <app-theme-toggle></app-theme-toggle>
+</header>

@@ -1,0 +1,104 @@
+.project-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+
+  // @media screen and (max-width: 980px) {
+  //   width: 675px;
+  // }
+
+  // @media screen and (max-width: 700px) {
+  //   width: 90%;
+  // }
+}
+
+.project-card {
+  max-width: 280px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 15px;
+  background: rgba(255,255,255,.1);
+  box-shadow: 20px 20px 50px rgb(0 0 0 / 50%);
+  border-top: 1px solid rgba(255,255,255,.5);
+  border-left: 1px solid rgba(255,255,255,.5);
+  backdrop-filter: blur(5px);
+}
+
+.project-card__img {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  opacity: 80%;
+}
+
+.project-card__img:hover {
+  opacity: 1;
+}
+
+.project-card__content {
+  width: 100%;
+  min-height: 170px;
+  padding: 0 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-card__content h1 {
+  color: var(--text-subtitle);
+}
+
+.project-card__content h5 {
+  font-family: "Montserrat Alternates-Thin", sans-serif;
+  font-size: 10px;
+  letter-spacing: 3px;
+}
+
+.project-card__content .tags {
+  display: flex;
+}
+
+.project-btn__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-btn__container a {
+  display: block;
+}
+
+.btn-url {
+  height: 30px;
+  width: 115px;
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+}
+
+.tags-container {
+  display: flex;
+  margin-left: -2px;
+}
+
+.tag {
+  padding: 2px 5px 4px 5px;
+  margin: 2px;
+  border-radius: 10px;
+  font-size: 16px;
+  align-items: center;
+}
+
+.color-pink {
+  background-color: #00d1b2;
+  color: #fff;
+}
+
+.color-green {
+  background-color: #48c774;
+  color: #fff;
+}
