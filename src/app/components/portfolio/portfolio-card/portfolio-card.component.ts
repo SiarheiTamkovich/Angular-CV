@@ -58,10 +58,10 @@ export class PortfolioCardComponent implements AfterViewInit {
   tagDict = new Map([
     ['Angular', 'is-primary'],
     ['React', 'is-primary'],
-    ['JavaScript', 'is-primary'],
+    ['java-script', 'color-yellow'],
     ['Docker', 'is-link is-light'],
     ['MongoDB', 'is-link'],
-    ['html', 'color-pink'],
+    ['html', 'color-orange'],
     ['css', 'color-green']
   ]);
 
