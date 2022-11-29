@@ -38,7 +38,7 @@ export class PortfolioCardComponent implements AfterViewInit {
   checkScroll() {
     const componentPosition = this.element.nativeElement.offsetTop
     const scrollPosition = window.pageYOffset
-    if (scrollPosition >= componentPosition + 1600) {
+    if (scrollPosition >= componentPosition + 1400) {
       this.state = 'show';
     } else {
       this.state = 'hide'
