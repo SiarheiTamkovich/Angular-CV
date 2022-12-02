@@ -6,3 +6,24 @@
 .portfolio-page-content {
   margin-top: 5vh;
 }
+
+.setting-toggle {
+  position: absolute;
+  top: 115px;
+  right: 20px;
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  transition: border 0.8s ease;
+  font-size: 12px;
+
+  &:hover {
+    border: 1px solid var(--btn-border);
+  }
+
+  @media only screen and (max-width: 600px) {
+    top: 67px;
+    right: 10px;
+  }
+}

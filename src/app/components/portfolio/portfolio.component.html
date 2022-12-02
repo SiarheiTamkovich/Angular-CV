@@ -3,6 +3,13 @@
   <div class="container portfolio-page-content">
     <h2 class="title">Portfolio</h2>
     <h3 class="subtitle">My works</h3>
+    <fa-icon 
+      class="setting-toggle" 
+      size="2x" 
+      [icon]="faSliders" 
+      title="Open setting panel"
+      (click)="openSettingPanel()">
+    </fa-icon>
     <app-portfolio-card [projects]="projects"></app-portfolio-card>
   </div>
 </section>
