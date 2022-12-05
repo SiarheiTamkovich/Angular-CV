@@ -38,7 +38,7 @@ export class PortfolioCardComponent implements AfterViewInit {
   checkScroll() {
     const componentPosition = this.element.nativeElement.offsetTop
     const scrollPosition = window.pageYOffset
-    if (scrollPosition >= componentPosition + 1600) {
+    if (scrollPosition >= componentPosition + 1400) {
       this.state = 'show';
     } else {
       this.state = 'hide'
@@ -58,10 +58,10 @@ export class PortfolioCardComponent implements AfterViewInit {
   tagDict = new Map([
     ['Angular', 'is-primary'],
     ['React', 'is-primary'],
-    ['JavaScript', 'is-primary'],
+    ['java-script', 'color-yellow'],
     ['Docker', 'is-link is-light'],
     ['MongoDB', 'is-link'],
-    ['html', 'color-pink'],
+    ['html', 'color-orange'],
     ['css', 'color-green']
   ]);
 

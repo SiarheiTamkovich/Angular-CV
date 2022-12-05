@@ -6,3 +6,77 @@
 .portfolio-page-content {
   margin-top: 5vh;
 }
+
+.setting-toggle {
+  position: absolute;
+  top: 115px;
+  right: 20px;
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  transition: border 0.8s ease;
+  font-size: 12px;
+
+  &:hover {
+    border: 1px solid var(--btn-border);
+  }
+
+  &.active {
+    background: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.1));
+    box-shadow:
+      inset rgba(0,0,0,.8) 0 1px 2px,
+      inset rgba(0,0,0,.05) 0 -1px 0,
+      var(--btn-border) 0 1px 1px;
+  }
+
+  &.active:hover {
+    border: none;
+  }
+
+  @media only screen and (max-width: 600px) {
+    top: 67px;
+    right: 10px;
+  }
+}
+
+.setting-panel {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: all 0.6s ease-out;
+  height: 0;
+  opacity: 0;
+
+  &.active {
+    height: auto;
+    opacity: 1;
+  }
+}
+
+.filter-btn {
+  box-sizing: content-box;
+  cursor: pointer;
+  margin: 4px;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  transition: all 0.8s ease;
+  font-size: 14px;
+
+  &:hover {
+    background-color:  #a3a3a3;
+    border: 1px solid var(--btn-border);
+  }
+
+  &.active {
+    border: 1px solid transparent;
+    background: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.1));
+    box-shadow:
+      inset rgba(0,0,0,.8) 0 1px 2px,
+      inset rgba(0,0,0,.05) 0 -1px 0,
+      var(--btn-border) 0 1px 1px;
+  }
+}

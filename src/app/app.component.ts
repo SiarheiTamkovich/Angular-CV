@@ -35,7 +35,7 @@ export class AppComponent implements AfterViewInit {
   @HostListener('window:scroll', ['$event'])
   checkScroll() {
     const scrollPosition = window.pageYOffset;
-    console.log(scrollPosition)
+    //console.log(scrollPosition)
     if (scrollPosition > 400) {
       this.isArrowUpActive = true;
     } else {
