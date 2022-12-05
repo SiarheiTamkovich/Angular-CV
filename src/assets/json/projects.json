@@ -28,5 +28,15 @@
     "description": "Web page own resume",
     "url": "https://siarheitamkovich.github.io/rsschool-cv/",
     "source": "https://github.com/SiarheiTamkovich/rsschool-cv"
+  },
+  {
+    "id": 4,
+    "tags": ["html", "css", "java-script"],
+    "image": "rs-museum.jpg",
+    "name": "Louvre",
+    "duration": "October 2021",
+    "description": "Louvre museum website",
+    "url": "https://rolling-scopes-school.github.io/siarheitamkovich-JSFE2021Q3/museum-dom/",
+    "source": "https://github.com/rolling-scopes-school/siarheitamkovich-JSFE2021Q3/tree/museum-dom"
   }
 ]
