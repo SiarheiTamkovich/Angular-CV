@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faSliders } from '@fortawesome/free-solid-svg-icons';
+import { faFilter } from '@fortawesome/free-solid-svg-icons';
 
 import projects from '../../../assets/json/projects.json'
 import { ProjectModel } from './portfolio.model';
@@ -12,15 +12,14 @@ import { ProjectModel } from './portfolio.model';
 export class PortfolioComponent {
 
   public projects: ProjectModel[] = projects;
-  public isSettingPanelVisible = false;
+  public isSettingPanelActive = false;
 
-  faSliders = faSliders;
+  faFilter = faFilter;
 
   constructor() { }
 
   public openSettingPanel() {
-    this.isSettingPanelVisible = !this.isSettingPanelVisible;
-    console.log("open setting panel", this.isSettingPanelVisible)
+    this.isSettingPanelActive = !this.isSettingPanelActive;
   }
 
 }

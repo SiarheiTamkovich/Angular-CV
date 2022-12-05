@@ -3,13 +3,19 @@
   <div class="container portfolio-page-content">
     <h2 class="title">Portfolio</h2>
     <h3 class="subtitle">My works</h3>
-    <fa-icon 
-      class="setting-toggle" 
-      size="2x" 
-      [icon]="faSliders" 
-      title="Open setting panel"
+    <fa-icon
+      [ngClass]="isSettingPanelActive ? 'setting-toggle active' : 'setting-toggle'"
+      size="2x"
+      [icon]="faFilter"
+      title="Open filters"
       (click)="openSettingPanel()">
     </fa-icon>
+    <div [ngClass]="isSettingPanelActive ? 'setting-panel active' : 'setting-panel'">
+      <span class="filter-btn active">React</span>
+      <span class="filter-btn">Angular</span>
+      <span class="filter-btn">Webpack</span>
+      <span class="filter-btn">NodeJS</span>
+    </div>
     <app-portfolio-card [projects]="projects"></app-portfolio-card>
   </div>
 </section>
