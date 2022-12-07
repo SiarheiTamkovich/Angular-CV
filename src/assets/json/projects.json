@@ -38,5 +38,15 @@
     "description": "Louvre museum website",
     "url": "https://rolling-scopes-school.github.io/siarheitamkovich-JSFE2021Q3/museum-dom/",
     "source": "https://github.com/rolling-scopes-school/siarheitamkovich-JSFE2021Q3/tree/museum-dom"
+  },
+  {
+    "id": 5,
+    "tags": ["html", "css", "java-script", "Webpack"],
+    "image": "rs-art-quiz.jpg",
+    "name": "Art quiz",
+    "duration": "November 2021",
+    "description": "Art quiz game",
+    "url": "https://rolling-scopes-school.github.io/siarheitamkovich-JSFE2021Q3/art-quiz/public/",
+    "source": "https://github.com/rolling-scopes-school/siarheitamkovich-JSFE2021Q3/tree/art-quiz"
   }
 ]

@@ -30,7 +30,15 @@ export class PortfolioCardComponent implements AfterViewInit {
 
   @Input() public projects!: ProjectModel[];
 
-  state = 'hide';
+  public state = 'hide';
+  public tagDict = new Map([
+    ['java-script', 'color-yellow'],
+    ['html', 'color-orange'],
+    ['css', 'color-green'],
+    ['Webpack', 'color-blue'],
+    ['Angular', 'is-primary'],
+    ['React', 'is-primary'],
+  ]);
 
   constructor(public element: ElementRef) { }
 
@@ -54,15 +62,4 @@ export class PortfolioCardComponent implements AfterViewInit {
       speed: 500,
     });
   }
-
-  tagDict = new Map([
-    ['Angular', 'is-primary'],
-    ['React', 'is-primary'],
-    ['java-script', 'color-yellow'],
-    ['Docker', 'is-link is-light'],
-    ['MongoDB', 'is-link'],
-    ['html', 'color-orange'],
-    ['css', 'color-green']
-  ]);
-
 }
