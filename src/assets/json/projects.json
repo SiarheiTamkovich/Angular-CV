@@ -41,6 +41,26 @@
   },
   {
     "id": 5,
+    "tags": ["html", "css", "java-script"],
+    "image": "rs-momentum.jpg",
+    "name": "Momentum",
+    "duration": "October 2021",
+    "description": "Personal page dashboard",
+    "url": "https://siarhei-project-of-momentum.netlify.app/",
+    "source": "https://github.com/SiarheiTamkovich/Netlify/tree/momentum-br/momentum"
+  },
+  {
+    "id": 6,
+    "tags": ["html", "css"],
+    "image": "rs-mem-slider.jpg",
+    "name": "Css slider",
+    "duration": "October 2021",
+    "description": "Simple css slider",
+    "url": "https://siarhei-project-of-momentum.netlify.app/",
+    "source": "https://github.com/SiarheiTamkovich/Netlify/tree/momentum-br/momentum"
+  },
+  {
+    "id": 7,
     "tags": ["html", "css", "java-script", "Webpack"],
     "image": "rs-art-quiz.jpg",
     "name": "Art quiz",
