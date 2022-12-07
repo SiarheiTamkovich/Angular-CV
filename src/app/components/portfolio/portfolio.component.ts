@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { faFilter } from '@fortawesome/free-solid-svg-icons';
-import { FilterModel } from 'src/app/models/filter-model';
+import { FilterModel, FilterName } from 'src/app/models/filter-model';
 
 import projects from '../../../assets/json/projects.json'
 import { ProjectModel } from './portfolio.model';
@@ -19,7 +19,8 @@ export class PortfolioComponent {
     isAngular: false,
     isWebpack: false,
     isNodeJS: false
-  }
+  };
+  public filterName = FilterName;
 
   faFilter = faFilter;
 
@@ -29,26 +30,26 @@ export class PortfolioComponent {
     this.isSettingPanelActive = !this.isSettingPanelActive;
   }
 
-  public setFilter(data: string) {
+  public setFilter(data: FilterName) {
     switch (data) {
 
-      case 'React': 
+      case this.filterName.react:
         this.filter.isReact = !this.filter.isReact;
       break;
 
-      case 'Angular': 
+      case this.filterName.angular:
         this.filter.isAngular = !this.filter.isAngular;
       break;
 
-      case 'Webpack': 
+      case this.filterName.webpack:
         this.filter.isWebpack = !this.filter.isWebpack;
       break;
 
-      case 'NodeJS': 
+      case this.filterName.nodejs:
         this.filter.isNodeJS = !this.filter.isNodeJS;
       break;
 
-      default: 
+      default:
       break;
     }
   }

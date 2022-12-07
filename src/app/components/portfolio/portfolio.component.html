@@ -11,27 +11,27 @@
       (click)="openSettingPanel()">
     </fa-icon>
     <div [ngClass]="isSettingPanelActive ? 'setting-panel active' : 'setting-panel'">
-      <span 
+      <span
         [ngClass]="filter.isReact ? 'filter-btn active' : 'filter-btn'"
-        (click)="setFilter('React')"
+        (click)="setFilter(filterName.react)"
         >
         React
       </span>
-      <span 
+      <span
         [ngClass]="filter.isAngular ? 'filter-btn active' : 'filter-btn'"
-        (click)="setFilter('Angular')"
+        (click)="setFilter(filterName.angular)"
         >
         Angular
       </span>
-      <span 
+      <span
         [ngClass]="filter.isWebpack ? 'filter-btn active' : 'filter-btn'"
-        (click)="setFilter('Webpack')"
+        (click)="setFilter(filterName.webpack)"
         >
         Webpack
       </span>
-      <span 
+      <span
         [ngClass]="filter.isNodeJS ? 'filter-btn active' : 'filter-btn'"
-        (click)="setFilter('NodeJS')"
+        (click)="setFilter(filterName.nodejs)"
         >
         NodeJS
       </span>
