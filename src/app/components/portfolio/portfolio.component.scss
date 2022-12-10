@@ -7,16 +7,27 @@
   margin-top: 5vh;
 }
 
-.setting-toggle {
+.button-container {
   position: absolute;
   top: 115px;
-  right: 20px;
+  right: 5%;
+
+  
+  @media only screen and (max-width: 600px) {
+    top: 160px;
+    right: 40%;
+  }
+}
+
+.setting-toggle {
   cursor: pointer;
+  margin: 2px;
   padding: 10px;
   border: 1px solid transparent;
   border-radius: 6px;
   transition: border 0.8s ease;
   font-size: 12px;
+  background-color: #a3a3a31c;
 
   &:hover {
     border: 1px solid var(--btn-border);
@@ -31,12 +42,7 @@
   }
 
   &.active:hover {
-    border: none;
-  }
-
-  @media only screen and (max-width: 600px) {
-    top: 67px;
-    right: 10px;
+    border: 1px solid transparent;
   }
 }
 

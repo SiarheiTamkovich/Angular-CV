@@ -1,5 +1,10 @@
 import { Component } from '@angular/core';
-import { faFilter } from '@fortawesome/free-solid-svg-icons';
+import {
+  faFilter,
+  faFilterCircleXmark,
+  faArrowDownShortWide,
+  faArrowUpWideShort
+} from '@fortawesome/free-solid-svg-icons';
 import { FilterModel, FilterName } from 'src/app/models/filter-model';
 
 import projects from '../../../assets/json/projects.json'
@@ -14,6 +19,7 @@ export class PortfolioComponent {
 
   public projects: ProjectModel[] = projects;
   public isSettingPanelActive = false;
+  public isSortItems = false;
   public filter: FilterModel = {
     isReact: false,
     isAngular: false,
@@ -23,11 +29,18 @@ export class PortfolioComponent {
   public filterName = FilterName;
 
   faFilter = faFilter;
+  faFilterCircleXmark = faFilterCircleXmark;
+  faArrowDownShortWide = faArrowDownShortWide;
+  faArrowUpWideShort = faArrowUpWideShort;
 
   constructor() { }
 
   public openSettingPanel() {
     this.isSettingPanelActive = !this.isSettingPanelActive;
+  }
+
+  public sortItems() {
+    this.isSortItems = !this.isSortItems;
   }
 
   public setFilter(data: FilterName) {
@@ -53,5 +66,4 @@ export class PortfolioComponent {
       break;
     }
   }
-
 }
