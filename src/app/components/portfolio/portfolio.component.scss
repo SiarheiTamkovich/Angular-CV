@@ -12,10 +12,10 @@
   top: 115px;
   right: 5%;
 
-  
   @media only screen and (max-width: 600px) {
-    top: 160px;
-    right: 40%;
+    position: unset;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -59,6 +59,10 @@
   &.active {
     height: auto;
     opacity: 1;
+  }
+
+  @media only screen and (max-width: 600px) {
+    
   }
 }
 

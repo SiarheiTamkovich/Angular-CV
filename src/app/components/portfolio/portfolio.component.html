@@ -22,7 +22,7 @@
       </fa-icon>
       <fa-icon
         *ngIf="!isSortItems"
-        [ngClass]="isSettingPanelActive ? 'setting-toggle active' : 'setting-toggle'"
+        [ngClass]="isSortItems ? 'setting-toggle active' : 'setting-toggle'"
         size="1x"
         [icon]="faArrowDownShortWide"
         title="Sort items from newest to oldest"
@@ -30,7 +30,7 @@
       </fa-icon>
       <fa-icon
         *ngIf="isSortItems"
-        [ngClass]="!isSettingPanelActive ? 'setting-toggle active' : 'setting-toggle'"
+        [ngClass]="isSortItems ? 'setting-toggle active' : 'setting-toggle'"
         size="1x"
         [icon]="faArrowUpWideShort"
         title="Sort items from oldest to newest"

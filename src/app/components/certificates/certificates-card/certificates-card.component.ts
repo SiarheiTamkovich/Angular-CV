@@ -41,7 +41,7 @@ export class CertificatesCardComponent implements AfterViewInit {
   checkScroll() {
     const componentPosition = this.element.nativeElement.offsetTop
     const scrollPosition = window.pageYOffset
-
+    //console.log('componentPosition=', componentPosition, ' scrollPosition=', scrollPosition)
     if (scrollPosition >= componentPosition - 300) {
       this.state = 'show'
     } else {
