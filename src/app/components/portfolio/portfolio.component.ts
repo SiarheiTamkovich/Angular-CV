@@ -41,6 +41,8 @@ export class PortfolioComponent {
 
   public sortItems() {
     this.isSortItems = !this.isSortItems;
+    !this.isSortItems ? projects.sort((a,b) => a.id - b.id) :
+      projects.sort((a,b) => b.id - a.id);
   }
 
   public setFilter(data: FilterName) {
