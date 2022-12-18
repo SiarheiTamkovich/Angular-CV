@@ -1,6 +1,7 @@
 import { AfterViewInit, Component, ElementRef, HostListener, Input, OnChanges, SimpleChanges} from '@angular/core';
 import { ProjectModel } from '../portfolio.model';
 import { animate, state, style, transition, trigger } from '@angular/animations';
+import { FilterModel } from 'src/app/models/filter-model';
 
 declare const VanillaTilt: { init: (arg0: NodeListOf<Element>, arg1: { max: number; speed: number; }) => void; };
 
@@ -29,16 +30,18 @@ export class PortfolioCardComponent implements AfterViewInit, OnChanges {
 
   @Input() public projects!: ProjectModel[];
   @Input() public isSort!: boolean;
+  @Input() public isFilter!: boolean;
+  @Input() public filter!: FilterModel;
 
   ngOnChanges() {
     const cardBlock = this.element.nativeElement.childNodes[0].childNodes;
 
-    for (let i = 0; i <= (cardBlock.length - 2); i++) {
+    for (let i = 0; i < (cardBlock.length - 1); i++) {
       cardBlock[i].style.opacity = 0;
     }
 
     setTimeout(() => {
-      for (let i = 0; i <= (cardBlock.length - 2); i++) {
+      for (let i = 0; i < (cardBlock.length - 1); i++) {
         cardBlock[i].style.opacity = 1;
       }
     }, 200);
@@ -58,10 +61,9 @@ export class PortfolioCardComponent implements AfterViewInit, OnChanges {
 
   @HostListener('window:scroll', ['$event'])
   checkScroll() {
-    const componentPosition = this.element.nativeElement.offsetParent.offsetTop
-    const scrollPosition = window.pageYOffset
-    //console.log(this.element)
-    //console.log('componentPosition=', componentPosition, ' scrollPosition=', scrollPosition)
+    const componentPosition = this.element.nativeElement.offsetParent.offsetTop;
+    const scrollPosition = window.pageYOffset;
+
     if (scrollPosition >= componentPosition - 300) {
       this.state = 'show';
     } else {
@@ -76,5 +78,4 @@ export class PortfolioCardComponent implements AfterViewInit, OnChanges {
       speed: 500,
     });
   }
-
 }

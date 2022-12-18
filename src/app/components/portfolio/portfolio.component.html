@@ -39,22 +39,10 @@
     </div>
     <div [ngClass]="isSettingPanelActive ? 'setting-panel active' : 'setting-panel'">
       <span
-        [ngClass]="filter.isReact ? 'filter-btn active' : 'filter-btn'"
-        (click)="setFilter(filterName.react)"
-        >
-        React
-      </span>
-      <span
         [ngClass]="filter.isAngular ? 'filter-btn active' : 'filter-btn'"
         (click)="setFilter(filterName.angular)"
         >
         Angular
-      </span>
-      <span
-        [ngClass]="filter.isWebpack ? 'filter-btn active' : 'filter-btn'"
-        (click)="setFilter(filterName.webpack)"
-        >
-        Webpack
       </span>
       <span
         [ngClass]="filter.isNodeJS ? 'filter-btn active' : 'filter-btn'"
@@ -62,7 +50,25 @@
         >
         NodeJS
       </span>
+      <span
+        [ngClass]="filter.isReact ? 'filter-btn active' : 'filter-btn'"
+        (click)="setFilter(filterName.react)"
+        >
+        React
+      </span>
+      <span
+        [ngClass]="filter.isWebpack ? 'filter-btn active' : 'filter-btn'"
+        (click)="setFilter(filterName.webpack)"
+        >
+        Webpack
+      </span>
     </div>
-    <app-portfolio-card [projects]="projects" [isSort]="isSortItems"></app-portfolio-card>
+    <app-portfolio-card
+      [projects]="projects"
+      [isSort]="isSortItems"
+      [isFilter]="isFilterItems"
+      [filter]="filter"
+      >
+    </app-portfolio-card>
   </div>
 </section>
