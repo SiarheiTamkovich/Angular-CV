@@ -89,13 +89,11 @@ export class PortfolioComponent {
       break;
     }
 
-    if (this.filterTegs.length !== 0) {
-      this.projects = projects.filter(project => {
-        project.tags.forEach(tag => {
-          this.isFilterItems = this.filterTegs.includes(tag);
-        });
-        return this.isFilterItems;
-      })
-    }
+    this.projects = projects.filter(project => {
+      project.tags.forEach(tag => {
+        this.isFilterItems = this.filterTegs.includes(tag);
+      });
+      return this.isFilterItems;
+    })
   }
 }

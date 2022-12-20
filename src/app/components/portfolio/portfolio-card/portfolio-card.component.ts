@@ -50,6 +50,7 @@ export class PortfolioCardComponent implements AfterViewInit, OnChanges {
   public state = 'hide';
   public tagDict = new Map([
     ['java-script', 'color-yellow'],
+    ['type-script', 'color-blue-light'],
     ['html', 'color-orange'],
     ['css', 'color-green'],
     ['Webpack', 'color-blue'],
