@@ -3,39 +3,72 @@
   <div class="container portfolio-page-content">
     <h2 class="title">Portfolio</h2>
     <h3 class="subtitle">My works</h3>
-    <fa-icon
-      [ngClass]="isSettingPanelActive ? 'setting-toggle active' : 'setting-toggle'"
-      size="2x"
-      [icon]="faFilter"
-      title="Open filters"
-      (click)="openSettingPanel()">
-    </fa-icon>
+    <div class="button-container">
+      <fa-icon
+        *ngIf="!isSettingPanelActive"
+        [ngClass]="isSettingPanelActive ? 'setting-toggle active' : 'setting-toggle'"
+        size="1x"
+        [icon]="faFilter"
+        title="Open filters"
+        (click)="openSettingPanel()">
+      </fa-icon>
+      <fa-icon
+        *ngIf="isSettingPanelActive"
+        [ngClass]="isSettingPanelActive ? 'setting-toggle active' : 'setting-toggle'"
+        size="1x"
+        [icon]="faFilterCircleXmark"
+        title="Close filters"
+        (click)="openSettingPanel()">
+      </fa-icon>
+      <fa-icon
+        *ngIf="!isSortItems"
+        [ngClass]="isSortItems ? 'setting-toggle active' : 'setting-toggle'"
+        size="1x"
+        [icon]="faArrowDownShortWide"
+        title="Sort items from newest to oldest"
+        (click)="sortItems()">
+      </fa-icon>
+      <fa-icon
+        *ngIf="isSortItems"
+        [ngClass]="isSortItems ? 'setting-toggle active' : 'setting-toggle'"
+        size="1x"
+        [icon]="faArrowUpWideShort"
+        title="Sort items from oldest to newest"
+        (click)="sortItems()">
+      </fa-icon>
+    </div>
     <div [ngClass]="isSettingPanelActive ? 'setting-panel active' : 'setting-panel'">
-      <span 
-        [ngClass]="filter.isReact ? 'filter-btn active' : 'filter-btn'"
-        (click)="setFilter('React')"
-        >
-        React
-      </span>
-      <span 
+      <span
         [ngClass]="filter.isAngular ? 'filter-btn active' : 'filter-btn'"
-        (click)="setFilter('Angular')"
+        (click)="setFilter(filterName.angular)"
         >
         Angular
       </span>
-      <span 
-        [ngClass]="filter.isWebpack ? 'filter-btn active' : 'filter-btn'"
-        (click)="setFilter('Webpack')"
-        >
-        Webpack
-      </span>
-      <span 
+      <span
         [ngClass]="filter.isNodeJS ? 'filter-btn active' : 'filter-btn'"
-        (click)="setFilter('NodeJS')"
+        (click)="setFilter(filterName.nodejs)"
         >
         NodeJS
       </span>
+      <span
+        [ngClass]="filter.isReact ? 'filter-btn active' : 'filter-btn'"
+        (click)="setFilter(filterName.react)"
+        >
+        React
+      </span>
+      <span
+        [ngClass]="filter.isWebpack ? 'filter-btn active' : 'filter-btn'"
+        (click)="setFilter(filterName.webpack)"
+        >
+        Webpack
+      </span>
     </div>
-    <app-portfolio-card [projects]="projects"></app-portfolio-card>
+    <app-portfolio-card
+      [projects]="projects"
+      [isSort]="isSortItems"
+      [isFilter]="isFilterItems"
+      [filter]="filter"
+      >
+    </app-portfolio-card>
   </div>
 </section>

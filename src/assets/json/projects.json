@@ -38,5 +38,45 @@
     "description": "Louvre museum website",
     "url": "https://rolling-scopes-school.github.io/siarheitamkovich-JSFE2021Q3/museum-dom/",
     "source": "https://github.com/rolling-scopes-school/siarheitamkovich-JSFE2021Q3/tree/museum-dom"
+  },
+  {
+    "id": 5,
+    "tags": ["html", "css", "java-script"],
+    "image": "rs-momentum.jpg",
+    "name": "Momentum",
+    "duration": "October 2021",
+    "description": "Personal page dashboard",
+    "url": "https://siarhei-project-of-momentum.netlify.app/",
+    "source": "https://github.com/SiarheiTamkovich/Netlify/tree/momentum-br/momentum"
+  },
+  {
+    "id": 6,
+    "tags": ["html", "css"],
+    "image": "rs-mem-slider.jpg",
+    "name": "Css slider",
+    "duration": "October 2021",
+    "description": "Simple css slider",
+    "url": "https://siarheitamkovich.github.io/cssMemSlider/cssMemSlider/",
+    "source": "https://github.com/SiarheiTamkovich/cssMemSlider"
+  },
+  {
+    "id": 7,
+    "tags": ["html", "css", "java-script", "Webpack"],
+    "image": "rs-art-quiz.jpg",
+    "name": "Art quiz",
+    "duration": "November 2021",
+    "description": "Art Quiz is a simple SPA app",
+    "url": "https://rolling-scopes-school.github.io/siarheitamkovich-JSFE2021Q3/art-quiz/public/",
+    "source": "https://github.com/rolling-scopes-school/siarheitamkovich-JSFE2021Q3/tree/art-quiz"
+  },
+  {
+    "id": 8,
+    "tags": ["html", "css", "type-script", "Webpack"],
+    "image": "rs-christmas-tree.jpg",
+    "name": "Christmas Tree",
+    "duration": "December 2021",
+    "description": "Decorate the Christmas tree",
+    "url": "https://rolling-scopes-school.github.io/siarheitamkovich-JSFE2021Q3/Christmas/dist/",
+    "source": "https://github.com/rolling-scopes-school/siarheitamkovich-JSFE2021Q3/tree/christmas-task2/Christmas"
   }
 ]
