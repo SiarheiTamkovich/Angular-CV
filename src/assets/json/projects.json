@@ -56,8 +56,8 @@
     "name": "Css slider",
     "duration": "October 2021",
     "description": "Simple css slider",
-    "url": "https://siarhei-project-of-momentum.netlify.app/",
-    "source": "https://github.com/SiarheiTamkovich/Netlify/tree/momentum-br/momentum"
+    "url": "https://siarheitamkovich.github.io/cssMemSlider/cssMemSlider/",
+    "source": "https://github.com/SiarheiTamkovich/cssMemSlider"
   },
   {
     "id": 7,
@@ -65,8 +65,18 @@
     "image": "rs-art-quiz.jpg",
     "name": "Art quiz",
     "duration": "November 2021",
-    "description": "Art quiz game",
+    "description": "Art Quiz is a simple SPA app",
     "url": "https://rolling-scopes-school.github.io/siarheitamkovich-JSFE2021Q3/art-quiz/public/",
     "source": "https://github.com/rolling-scopes-school/siarheitamkovich-JSFE2021Q3/tree/art-quiz"
+  },
+  {
+    "id": 8,
+    "tags": ["html", "css", "type-script", "Webpack"],
+    "image": "rs-christmas-tree.jpg",
+    "name": "Christmas Tree",
+    "duration": "December 2021",
+    "description": "Decorate the Christmas tree",
+    "url": "https://rolling-scopes-school.github.io/siarheitamkovich-JSFE2021Q3/Christmas/dist/",
+    "source": "https://github.com/rolling-scopes-school/siarheitamkovich-JSFE2021Q3/tree/christmas-task2/Christmas"
   }
 ]

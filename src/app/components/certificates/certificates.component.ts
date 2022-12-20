@@ -20,6 +20,7 @@ export class CertificatesComponent {
   checkScroll() {
     const componentPosition = this.element.nativeElement.offsetTop
     const scrollPosition = window.pageYOffset
+
     if (scrollPosition >= componentPosition - 250) {
       this.state = 'show'
     } else {

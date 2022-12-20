@@ -4,6 +4,7 @@
   grid-gap: 20px;
   gap: 20px;
   padding: 20px;
+  justify-content: center;
   justify-items: center;
 }
 
@@ -18,6 +19,7 @@
   border-top: 1px solid rgba(255,255,255,.5);
   border-left: 1px solid rgba(255,255,255,.5);
   backdrop-filter: blur(5px);
+  transition: all 0.8s;
 }
 
 .project-card__img {
@@ -70,6 +72,10 @@
   font-size: 14px;
   padding: 0;
   margin: 0;
+
+  @media only screen and (max-width: 600px) {
+    width: 106px;
+  }
 }
 
 .tags-container {
@@ -103,5 +109,10 @@
 
 .color-blue {
   background-color:  #3b82f680;
+  color: #fff;
+}
+
+.color-blue-light {
+  background-color: #2F74C0;
   color: #fff;
 }
