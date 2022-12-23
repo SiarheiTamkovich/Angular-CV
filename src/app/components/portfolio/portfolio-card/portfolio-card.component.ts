@@ -44,7 +44,7 @@ export class PortfolioCardComponent implements AfterViewInit, OnChanges {
       for (let i = 0; i < (cardBlock.length - 1); i++) {
         cardBlock[i].style.opacity = 1;
       }
-    }, 200);
+    }, 250);
   }
 
   public state = 'hide';
@@ -53,9 +53,11 @@ export class PortfolioCardComponent implements AfterViewInit, OnChanges {
     ['type-script', 'color-blue-light'],
     ['html', 'color-orange'],
     ['css', 'color-green'],
+    ['sass', 'color-violet'],
     ['Webpack', 'color-blue'],
     ['Angular', 'is-primary'],
-    ['React', 'is-primary'],
+    ['React', 'color-react'],
+    ['Redux', 'color-redux'],
   ]);
 
   constructor(public element: ElementRef) { }

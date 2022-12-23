@@ -90,10 +90,17 @@ export class PortfolioComponent {
     }
 
     this.projects = projects.filter(project => {
+      let isIncludes = false;
       project.tags.forEach(tag => {
-        this.isFilterItems = this.filterTegs.includes(tag);
+        if(this.filterTegs.includes(tag)) {
+          isIncludes = !isIncludes;
+        }
       });
-      return this.isFilterItems;
+      return isIncludes;
     })
+    //console.log(this.filterTegs, this.projects)
+    if(this.filterTegs.length === 0) {
+      this.projects = projects;
+    }
   }
 }

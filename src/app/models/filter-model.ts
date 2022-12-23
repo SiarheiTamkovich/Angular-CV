@@ -6,9 +6,6 @@ export interface FilterModel {
 }
 
 export enum FilterName {
-  css = 'css',
-  html = 'html',
-  js = 'jave-script',
   react = 'React',
   webpack = 'Webpack',
   angular = 'Angular',

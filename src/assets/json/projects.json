@@ -78,5 +78,15 @@
     "description": "Decorate the Christmas tree",
     "url": "https://rolling-scopes-school.github.io/siarheitamkovich-JSFE2021Q3/Christmas/dist/",
     "source": "https://github.com/rolling-scopes-school/siarheitamkovich-JSFE2021Q3/tree/christmas-task2/Christmas"
+  },
+  {
+    "id": 9,
+    "tags": ["html", "sass", "React", "Redux"],
+    "image": "rs-lang.jpg",
+    "name": "RS Lang",
+    "duration": "February 2022",
+    "description": "RS Lang is a simple SPA app",
+    "url": "https://rslang-team-19-siarheitamkovich.netlify.app/",
+    "source": "https://github.com/SiarheiTamkovich/rslang/tree/develop"
   }
 ]
