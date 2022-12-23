@@ -81,6 +81,16 @@
   },
   {
     "id": 9,
+    "tags": ["html", "css", "Webpack"],
+    "image": "rs-presentation.jpg",
+    "name": "Redux presentation",
+    "duration": "January 2022",
+    "description": "Presentation with reveal.js",
+    "url": "https://rolling-scopes-school.github.io/siarheitamkovich-JSFE2021Q3/redux/dist/",
+    "source": "https://github.com/rolling-scopes-school/siarheitamkovich-JSFE2021Q3/commits/presentation/redux"
+  },
+  {
+    "id": 10,
     "tags": ["html", "sass", "React", "Redux"],
     "image": "rs-lang.jpg",
     "name": "RS Lang",
