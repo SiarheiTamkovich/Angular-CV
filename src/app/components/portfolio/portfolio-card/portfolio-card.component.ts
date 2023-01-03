@@ -55,7 +55,7 @@ export class PortfolioCardComponent implements AfterViewInit, OnChanges {
     ['css', 'color-green'],
     ['sass', 'color-violet'],
     ['Webpack', 'color-blue'],
-    ['Angular', 'is-primary'],
+    ['Angular', 'color-angular'],
     ['React', 'color-react'],
     ['Redux', 'color-redux'],
   ]);

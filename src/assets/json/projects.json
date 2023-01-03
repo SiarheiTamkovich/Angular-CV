@@ -98,5 +98,15 @@
     "description": "RS Lang is a simple SPA app",
     "url": "https://rslang-team-19-siarheitamkovich.netlify.app/",
     "source": "https://github.com/SiarheiTamkovich/rslang/tree/develop"
+  },
+  {
+    "id": 12,
+    "tags": ["html", "sass", "Angular"],
+    "image": "rs-pmapp.jpg",
+    "name": "Project management App",
+    "duration": "May 2022",
+    "description": "The command task Angular SPA app",
+    "url": "https://team34-project-management-app.netlify.app/#/welcome",
+    "source": "https://github.com/lisaliza6428/project-management-app/tree/develop"
   }
 ]
