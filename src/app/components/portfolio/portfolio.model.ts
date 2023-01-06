@@ -1,5 +1,3 @@
-import { FilterName } from "src/app/models/filter-model";
-
 export interface ProjectModel {
   id: number,
   tags: string[],

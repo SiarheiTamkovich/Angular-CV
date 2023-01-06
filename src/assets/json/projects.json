@@ -78,5 +78,45 @@
     "description": "Decorate the Christmas tree",
     "url": "https://rolling-scopes-school.github.io/siarheitamkovich-JSFE2021Q3/Christmas/dist/",
     "source": "https://github.com/rolling-scopes-school/siarheitamkovich-JSFE2021Q3/tree/christmas-task2/Christmas"
+  },
+  {
+    "id": 9,
+    "tags": ["html", "css", "Webpack"],
+    "image": "rs-presentation.jpg",
+    "name": "Redux presentation",
+    "duration": "January 2022",
+    "description": "Presentation with reveal.js",
+    "url": "https://rolling-scopes-school.github.io/siarheitamkovich-JSFE2021Q3/redux/dist/",
+    "source": "https://github.com/rolling-scopes-school/siarheitamkovich-JSFE2021Q3/commits/presentation/redux"
+  },
+  {
+    "id": 10,
+    "tags": ["html", "sass", "React", "Redux"],
+    "image": "rs-lang.jpg",
+    "name": "RS Lang",
+    "duration": "February 2022",
+    "description": "RS Lang is a simple SPA app",
+    "url": "https://rslang-team-19-siarheitamkovich.netlify.app/",
+    "source": "https://github.com/SiarheiTamkovich/rslang/tree/develop"
+  },
+  {
+    "id": 11,
+    "tags": ["html", "sass", "Angular"],
+    "image": "rs-youtube-client.jpg",
+    "name": "Youtube client App",
+    "duration": "April 2022",
+    "description": "The Angular SPA app",
+    "url": "https://yourtube-client.netlify.app/",
+    "source": "https://github.com/SiarheiTamkovich/youtube-client/tree/NgRx"
+  },
+  {
+    "id": 12,
+    "tags": ["html", "sass", "Angular"],
+    "image": "rs-pmapp.jpg",
+    "name": "Project management App",
+    "duration": "May 2022",
+    "description": "The command task Angular SPA app",
+    "url": "https://team34-project-management-app.netlify.app/#/welcome",
+    "source": "https://github.com/lisaliza6428/project-management-app/tree/develop"
   }
 ]
