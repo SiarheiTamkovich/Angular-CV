@@ -100,6 +100,16 @@
     "source": "https://github.com/SiarheiTamkovich/rslang/tree/develop"
   },
   {
+    "id": 11,
+    "tags": ["html", "sass", "Angular"],
+    "image": "rs-youtube-client.jpg",
+    "name": "Youtube client App",
+    "duration": "April 2022",
+    "description": "The Angular SPA app",
+    "url": "https://yourtube-client.netlify.app/",
+    "source": "https://github.com/SiarheiTamkovich/youtube-client/tree/NgRx"
+  },
+  {
     "id": 12,
     "tags": ["html", "sass", "Angular"],
     "image": "rs-pmapp.jpg",
